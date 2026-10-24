@@ -1,6 +1,6 @@
 # Image sources
 
-The official McDonald's images below were collected from McDonald's U.S. product pages, its U.S. homepage, or McDonald's corporate stories, then converted to local WebP files for the menu. The five size-specific Chicken McNuggets® WebP files were supplied by the site owner. McDonald's trademarks and photography remain the property of their respective owners; this source list does not grant reuse rights.
+The official McDonald's images below were collected from McDonald's U.S. product pages, its U.S. homepage, or McDonald's corporate stories, then converted to local WebP files for the menu. The five size-specific Chicken McNuggets® WebP files were supplied by the site owner. Responsive files suffixed with `-160`, `-240`, `-320`, `-432`, or `-480` are resized WebP derivatives of the existing image with the same base name. McDonald's trademarks and photography remain the property of their respective owners; this source list does not grant reuse rights.
 
 | Local file | Official source page | Source details |
 | --- | --- | --- |

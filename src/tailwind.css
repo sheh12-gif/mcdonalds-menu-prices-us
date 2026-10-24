@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-latin-wght-normal.woff2') format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lightweight site-specific rules previously embedded in index.html. */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.hero-pattern {
+  background-color: #991B1B;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 199, 44, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(218, 41, 28, 0.4) 0%, transparent 50%),
+    linear-gradient(135deg, #7F1D1D 0%, #B91C1C 50%, #991B1B 100%);
+}
+
+.card-zoom:hover .item-img {
+  transform: scale(1.05);
+}
