@@ -1964,6 +1964,247 @@
       }
     ];
 
+    const MENU_IMAGE_BY_ITEM = {
+  "1% Low Fat Milk Jug": "images/1-low-fat-milk-jug.webp",
+  "10 Piece Chicken McNuggets® Meal": "images/10-piece-chicken-mcnuggets-meal.webp",
+  "10 pc. Chicken McNuggets® Meal": "images/10-piece-chicken-mcnuggets-meal.webp",
+  "4 Piece Chicken McNuggets®": "images/4-chicken-mcnuggets.webp",
+  "4 Piece Chicken McNuggets® Happy Meal®": "images/4-piece-chicken-mcnuggets-happy-meal.webp",
+  "4 pc. Chicken McNuggets®": "images/4-piece-chicken-mcnuggets.webp",
+  "Chicken McNuggets® (4 pc)": "images/4-piece-chicken-mcnuggets.webp",
+  "6 Piece Chicken McNuggets® Happy Meal®": "images/6-piece-chicken-mcnuggets-happy-meal.webp",
+  "6 pc. Chicken McNuggets®": "images/6-piece-chicken-mcnuggets.webp",
+  "6 Piece Chicken McNuggets®": "images/6-piece-chicken-mcnuggets.webp",
+  "Americano": "images/americano.webp",
+  "Apple Slices": "images/apple-slices.webp",
+  "Bacon, Egg & Cheese Bagel Meal": "images/bacon-egg-cheese-bagel-meal.webp",
+  "Bacon, Egg & Cheese Bagel": "images/bacon-egg-cheese-bagel.webp",
+  "Bacon, Egg & Cheese Biscuit Meal": "images/bacon-egg-cheese-biscuit-meal.webp",
+  "Bacon, Egg & Cheese Biscuit": "images/bacon-egg-cheese-biscuit.webp",
+  "Bacon, Egg & Cheese McGriddles® Meal": "images/bacon-egg-cheese-mcgriddles-meal.webp",
+  "Bacon, Egg & Cheese McGriddles®": "images/bacon-egg-cheese-mcgriddles.webp",
+  "Bacon Quarter Pounder® with Cheese Meal": "images/bacon-quarter-pounder-cheese-meal.webp",
+  "Bacon Quarter Pounder® with Cheese": "images/bacon-quarter-pounder-cheese.webp",
+  "Bagel (Plain)": "images/bagel-plain.webp",
+  "Baked Apple Pie": "images/baked-apple-pie.webp",
+  "Big Breakfast® with Hotcakes": "images/big-breakfast-with-hotcakes.webp",
+  "Big Breakfast®": "images/big-breakfast.webp",
+  "Big Mac® Meal": "images/big-mac-meal.webp",
+  "Big Mac®": "images/big-mac.webp",
+  "Blackberry Passion Fruit Refresher": "images/blackberry-passion-fruit-refresher.webp",
+  "Cheeseburger Meal": "images/cheeseburger-meal.webp",
+  "Cheeseburger": "images/cheeseburger.webp",
+  "10 pc. Chicken McNuggets®": "images/chicken-mcnuggets.webp",
+  "Chocolate Chip Cookie": "images/chocolate-chip-cookie.webp",
+  "Chocolate Shake": "images/chocolate-shake.webp",
+  "Coca-Cola®": "images/coca-cola.webp",
+  "Creamy Chili McCrispy™ Strip Dip": "images/creamy-chili-mccrispy-strip-dip.webp",
+  "Creamy Ranch Sauce": "images/creamy-ranch-sauce.webp",
+  "Daily Double": "images/daily-double.webp",
+  "DASANI® Water": "images/dasani-water.webp",
+  "Deluxe McCrispy® Meal": "images/deluxe-mccrispy-meal.webp",
+  "Deluxe McCrispy®": "images/deluxe-mccrispy.webp",
+  "Diet Coke®": "images/diet-coke.webp",
+  "Dirty Dr Pepper®": "images/dirty-dr-pepper.webp",
+  "Double Cheeseburger": "images/double-cheeseburger.webp",
+  "Double Quarter Pounder® with Cheese Meal": "images/double-quarter-pounder-cheese-meal.webp",
+  "Double Quarter Pounder® with Cheese": "images/double-quarter-pounder-cheese.webp",
+  "Dr Pepper®": "images/dr-pepper.webp",
+  "Egg and Cheese Bagel": "images/egg-and-cheese-bagel.webp",
+  "Egg McMuffin® Meal": "images/egg-mcmuffin-meal.webp",
+  "Egg McMuffin®": "images/egg-mcmuffin.webp",
+  "Fanta® Orange": "images/fanta-orange.webp",
+  "Filet-O-Fish® Meal": "images/filet-o-fish-meal.webp",
+  "Filet-O-Fish®": "images/filet-o-fish.webp",
+  "Frozen Coca-Cola® Classic": "images/frozen-coca-cola-classic.webp",
+  "Frozen Fanta® Blue Raspberry": "images/frozen-fanta-blue-raspberry.webp",
+  "Fruit & Maple Oatmeal": "images/fruit-maple-oatmeal.webp",
+  "Hamburger Happy Meal®": "images/hamburger-happy-meal.webp",
+  "Hamburger": "images/hamburger-the-classic-mcdonalds-burger.webp",
+  "Hash Browns": "images/hash-browns.webp",
+  "Hi-C® Orange Lavaburst®": "images/hi-c-orange-lavaburst.webp",
+  "Honest Kids® Appley Ever After® Juice": "images/honest-kids-appley-ever-after-organic-juice-drink.webp",
+  "Honey Mustard Sauce": "images/honey-mustard-sauce.webp",
+  "Honey": "images/honey.webp",
+  "Hot Caramel Sundae": "images/hot-caramel-sundae.webp",
+  "McCafé® Hot Chocolate": "images/hot-chocolate.webp",
+  "Hot Fudge Sundae": "images/hot-fudge-sundae.webp",
+  "Hot Tea": "images/hot-tea.webp",
+  "Hotcakes and Sausage": "images/hotcakes-and-sausage.webp",
+  "Hotcakes": "images/hotcakes.webp",
+  "McCafé® Iced Caramel Latte": "images/iced-caramel-latte.webp",
+  "Ketchup Packet": "images/ketchup-packet.webp",
+  "Lemonade": "images/lemonade.webp",
+  "Mango Pineapple Refresher": "images/mango-pineapple-refresher.webp",
+  "Mango Pineapple Smoothie": "images/mango-pineapple-smoothie.webp",
+  "Mayonnaise Packet": "images/mayonnaise-packet.webp",
+  "McCafé® Cappuccino": "images/mccafe-cappuccino.webp",
+  "McCafé® Caramel Cappuccino": "images/mccafe-caramel-cappuccino.webp",
+  "McCafé® Caramel Frappé": "images/mccafe-caramel-frappe.webp",
+  "McCafé® Caramel Latte": "images/mccafe-caramel-latte.webp",
+  "McCafé® Caramel Macchiato": "images/mccafe-caramel-macchiato.webp",
+  "McCafé® French Vanilla Cappuccino": "images/mccafe-french-vanilla-cappuccino.webp",
+  "McCafé® French Vanilla Latte": "images/mccafe-french-vanilla-latte.webp",
+  "McCafé® Iced Caramel Coffee": "images/mccafe-iced-caramel-coffee.webp",
+  "McCafé® Iced Caramel Macchiato": "images/mccafe-iced-caramel-macchiato.webp",
+  "McCafé® Iced Coffee": "images/mccafe-iced-coffee.webp",
+  "McCafé® Iced Black Coffee": "images/iced-coffee.webp",
+  "McCafé® Iced French Vanilla Coffee": "images/mccafe-iced-french-vanilla-coffee.webp",
+  "McCafé® Iced French Vanilla Latte": "images/mccafe-iced-french-vanilla-latte.webp",
+  "McCafé® Iced Latte": "images/mccafe-iced-latte.webp",
+  "McCafé® Iced Mocha": "images/mccafe-iced-mocha.webp",
+  "McCafé® Latte": "images/mccafe-latte.webp",
+  "McCafé® Mocha Frappé": "images/mccafe-mocha-frappe.webp",
+  "McCafé® Mocha Latte": "images/mccafe-mocha-latte.webp",
+  "McCafé® Premium Roast Coffee": "images/mccafe-premium-roast-coffee.webp",
+  "McChicken®": "images/mcchicken.webp",
+  "McCrispy® Meal": "images/mccrispy-meal.webp",
+  "McCrispy® Strips Meal": "images/mccrispy-strips-meal.webp",
+  "McCrispy® Strips Meal — 3-Piece": "images/mccrispy-strips-meal.webp",
+  "McCrispy® Strips Meal — 4-Piece": "images/mccrispy-strips-meal.webp",
+  "3 pc. McCrispy® Strips": "images/mccrispy-strips.webp",
+  "4 pc. McCrispy® Strips": "images/mccrispy-strips.webp",
+  "3-Piece McCrispy Strips with Caesar Sauce": "images/mccrispy-strips.webp",
+  "McCrispy®": "images/mccrispy.webp",
+  "McDouble®": "images/mcdouble.webp",
+  "M&M'S® McFlurry®": "images/mcflurry-with-mms-candies.webp",
+  "OREO® McFlurry®": "images/mcflurry-with-oreo-cookies.webp",
+  "Medium Coca-Cola®": "images/medium-coca-cola.webp",
+  "Medium McCafé® Premium Roast Coffee": "images/medium-mccafe-premium-roast-coffee.webp",
+  "Minute Maid® Premium Orange Juice": "images/minute-maid-premium-orange-juice.webp",
+  "Mustard Packet": "images/mustard-packet.webp",
+  "Orange Dream with Hi-C®": "images/orange-dream.webp",
+  "Orange Dream with Fanta®": "images/orange-dream.webp",
+  "Quarter Pounder® with Cheese Deluxe Meal": "images/quarter-pounder-cheese-deluxe-meal.webp",
+  "Quarter Pounder® with Cheese Deluxe": "images/quarter-pounder-cheese-deluxe.webp",
+  "Quarter Pounder® with Cheese Meal": "images/quarter-pounder-cheese-meal.webp",
+  "Quarter Pounder® with Cheese": "images/quarter-pounder-cheese.webp",
+  "Ranch Snack Wrap® Meal": "images/ranch-snack-wrap-meal.webp",
+  "Ranch Snack Wrap®": "images/ranch-snack-wrap.webp",
+  "Ranch & Spicy Snack Wrap® Meal": "images/ranch-spicy-snack-wrap-meal.webp",
+  "Red Bull® Dragonberry Energizer": "images/red-bull-dragonberry-energizer.webp",
+  "Reduced Sugar Low Fat Chocolate Milk Jug": "images/reduced-sugar-low-fat-chocolate-milk-jug.webp",
+  "Reduced Sugar Red Bull® Dragonberry Energizer": "images/reduced-sugar-red-bull-dragonberry-energizer.webp",
+  "Sausage Biscuit with Egg Meal": "images/sausage-biscuit-with-egg-meal.webp",
+  "Sausage Biscuit with Egg": "images/sausage-biscuit-with-egg.webp",
+  "Sausage Biscuit": "images/sausage-biscuit.webp",
+  "Sausage Burrito Meal": "images/sausage-burrito-meal.webp",
+  "Sausage Burrito": "images/sausage-burrito.webp",
+  "Sausage, Egg & Cheese Bagel": "images/sausage-egg-cheese-bagel.webp",
+  "Sausage, Egg & Cheese McGriddles® Meal": "images/sausage-egg-cheese-mcgriddles-meal.webp",
+  "Sausage, Egg & Cheese McGriddles®": "images/sausage-egg-cheese-mcgriddles.webp",
+  "Sausage McGriddles® Meal": "images/sausage-mcgriddles-meal.webp",
+  "Sausage McGriddles®": "images/sausage-mcgriddles.webp",
+  "Sausage McMuffin® with Egg Meal": "images/sausage-mcmuffin-with-egg-meal.webp",
+  "Sausage McMuffin® with Egg": "images/sausage-mcmuffin-with-egg.webp",
+  "Sausage McMuffin®": "images/sausage-mcmuffin.webp",
+  "Classic Big Mac Pack": "images/shareables-bundles.webp",
+  "Classic Cheeseburger Pack": "images/shareables-bundles.webp",
+  "Small World Famous Fries®": "images/small-world-famous-fries.webp",
+  "World Famous Fries® (Small)": "images/small-world-famous-fries.webp",
+  "2 Large Fries": "images/world-famous-fries.webp",
+  "Spicy Buffalo Sauce": "images/spicy-buffalo-sauce.webp",
+  "Spicy Deluxe McCrispy® Meal": "images/spicy-deluxe-mccrispy-meal.webp",
+  "Spicy Deluxe McCrispy®": "images/spicy-deluxe-mccrispy.webp",
+  "Spicy McCrispy® Meal": "images/spicy-mccrispy-meal.webp",
+  "Spicy McCrispy®": "images/spicy-mccrispy.webp",
+  "Spicy Snack Wrap® Meal": "images/spicy-snack-wrap-meal.webp",
+  "Spicy Snack Wrap®": "images/spicy-snack-wrap.webp",
+  "Sprite® Berry Blast": "images/sprite-berry-blast.webp",
+  "Sprite®": "images/sprite.webp",
+  "Steak, Egg & Cheese Bagel Meal": "images/steak-egg-cheese-bagel-meal.webp",
+  "Steak, Egg & Cheese Bagel": "images/steak-egg-cheese-bagel.webp",
+  "Strawberry Banana Smoothie": "images/strawberry-banana-smoothie.webp",
+  "Strawberry Shake": "images/strawberry-shake.webp",
+  "Strawberry Watermelon Refresher": "images/strawberry-watermelon-refresher.webp",
+  "Sweet 'N Sour Sauce": "images/sweet-n-sour-sauce.webp",
+  "Sweet Tea": "images/sweet-tea.webp",
+  "Tangy Barbeque Sauce": "images/tangy-barbeque-sauce.webp",
+  "The Daily Double Meal Deal": "images/the-daily-double-meal-deal.webp",
+  "The McChicken® $5 Meal Deal": "images/the-mcchicken-5-meal-deal.webp",
+  "The McDouble® $5 Meal Deal": "images/the-mcdouble-5-meal-deal.webp",
+  "The Sausage Biscuit Meal Deal": "images/the-sausage-biscuit-meal-deal.webp",
+  "The Sausage McMuffin® Meal Deal": "images/the-sausage-mcmuffin-meal-deal.webp",
+  "Unsweetened Iced Tea": "images/unsweetened-iced-tea.webp",
+  "Vanilla Cone": "images/vanilla-cone.webp",
+  "Vanilla Shake": "images/vanilla-shake.webp",
+  "World Famous Fries®": "images/world-famous-fries.webp"
+};
+
+    const MENU_IMAGE_ALT_BY_ITEM = {
+  "Vanilla Cone": "Vanilla cone",
+  "Vanilla Shake": "Vanilla shake",
+  "Big Mac®": "Big Mac burger",
+  "McChicken®": "McChicken sandwich",
+  "McCrispy®": "McCrispy chicken sandwich",
+  "Deluxe McCrispy®": "Deluxe McCrispy chicken sandwich",
+  "Spicy McCrispy®": "Spicy McCrispy chicken sandwich",
+  "Spicy Deluxe McCrispy®": "Spicy Deluxe McCrispy chicken sandwich",
+  "Filet-O-Fish®": "Filet-O-Fish sandwich",
+  "Coca-Cola®": "Coca-Cola soft drink",
+  "Diet Coke®": "Diet Coke soft drink",
+  "Coca-Cola® Zero Sugar": "Coca-Cola Zero Sugar soft drink",
+  "Sprite®": "Sprite soft drink",
+  "Dr Pepper®": "Dr Pepper soft drink",
+  "Fanta® Orange": "Fanta Orange soft drink",
+  "Hi-C® Orange Lavaburst®": "Hi-C Orange Lavaburst drink",
+  "DASANI® Water": "DASANI bottled water",
+  "1% Low Fat Milk Jug": "1% low-fat milk jug",
+  "Small World Famous Fries®": "Small World Famous Fries",
+  "World Famous Fries®": "World Famous Fries",
+  "2 Large Fries": "World Famous Fries",
+  "McCafé® Iced Coffee": "McCafé iced coffee",
+  "McCafé® Iced Black Coffee": "McCafé iced black coffee",
+  "McCafé® Iced Caramel Latte": "McCafé iced caramel latte",
+  "McCafé® Caramel Frappé": "McCafé caramel frappé",
+  "McCafé® Mocha Frappé": "McCafé mocha frappé",
+  "10 pc. Chicken McNuggets®": "Chicken McNuggets with dipping sauce",
+  "4 pc. Chicken McNuggets®": "4-piece Chicken McNuggets with dipping sauce",
+  "4 Piece Chicken McNuggets®": "4-piece Chicken McNuggets with dipping sauce",
+  "Chicken McNuggets® (4 pc)": "4-piece Chicken McNuggets with dipping sauce",
+  "6 pc. Chicken McNuggets®": "6-piece Chicken McNuggets with dipping sauce",
+  "6 Piece Chicken McNuggets®": "6-piece Chicken McNuggets with dipping sauce",
+  "10 Piece Chicken McNuggets® Meal": "10-piece Chicken McNuggets meal with fries and a drink",
+  "10 pc. Chicken McNuggets® Meal": "10-piece Chicken McNuggets meal with fries and a drink",
+  "4 Piece Chicken McNuggets® Happy Meal®": "4-piece Chicken McNuggets Happy Meal",
+  "6 Piece Chicken McNuggets® Happy Meal®": "6-piece Chicken McNuggets Happy Meal",
+  "OREO® McFlurry®": "OREO McFlurry",
+  "M&M'S® McFlurry®": "M&M’S McFlurry",
+  "Classic Big Mac Pack": "McDonald's shareable bundle with burgers, fries, nuggets, and drinks",
+  "Classic Cheeseburger Pack": "McDonald's shareable bundle with burgers, fries, nuggets, and drinks",
+  "3 pc. McCrispy® Strips": "McCrispy chicken strips",
+  "4 pc. McCrispy® Strips": "McCrispy chicken strips",
+  "3-Piece McCrispy Strips with Caesar Sauce": "McCrispy chicken strips with Caesar sauce",
+  "McCrispy® Strips Meal": "McCrispy Strips meal",
+  "McCrispy® Strips Meal — 3-Piece": "3-piece McCrispy Strips meal",
+  "McCrispy® Strips Meal — 4-Piece": "4-piece McCrispy Strips meal"
+};
+
+    function applyMenuImages(sections) {
+      const applyImage = (item) => {
+        const imagePath = MENU_IMAGE_BY_ITEM[item.name];
+        if (!imagePath) return;
+        item.img = imagePath;
+        item.alt = MENU_IMAGE_ALT_BY_ITEM[item.name] || item.name.replace(/[®™]/g, '').replace(/\s+/g, ' ').trim();
+      };
+
+      sections.forEach((section) => {
+        (section.items || []).forEach(applyImage);
+        (section.subgroups || []).forEach((subgroup) => (subgroup.items || []).forEach(applyImage));
+      });
+    }
+
+    applyMenuImages(MENU_SECTIONS);
+
+    // The generic iced-coffee photo is assigned to the Iced Black Coffee item;
+    // McCafé Iced Coffee uses its separately named product photo.
+
+    const escapeHtmlAttribute = (value) => String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+
     let activeCategory = 'all';
 
     function renderCardHTML(item) {
@@ -1980,9 +2221,9 @@
         <article class="bg-white rounded-2xl border border-gray-200/80 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between overflow-hidden">
           <div class="flex flex-col h-full justify-between">
             <div>
-              <!-- Image slot intentionally left empty until menu photography is added -->
+              <!-- Product photo appears when a matching supplied asset is available; otherwise keep the empty slot. -->
               <div class="relative h-44 sm:h-48 bg-gray-50/80 flex items-center justify-center p-4 overflow-hidden border-b border-gray-100">
-                ${item.img ? `<img src="${item.img}" alt="${item.name}" loading="lazy" width="320" height="240" class="h-36 w-auto object-contain rounded-xl" />` : `
+                ${item.img ? `<img src="${escapeHtmlAttribute(item.img)}" alt="${escapeHtmlAttribute(item.alt || item.name)}" loading="lazy" decoding="async" width="320" height="240" class="h-36 w-auto object-contain rounded-xl" />` : `
                   <div class="w-full h-full rounded-xl border border-dashed border-gray-200/80 flex items-center justify-center" aria-hidden="true"></div>
                 `}
               </div>
