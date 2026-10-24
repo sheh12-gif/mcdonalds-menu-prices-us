@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>McDonald's Menu With Prices (October 2026) - Full Menu & Calories</title>
+  <meta name="description" content="Browse the complete 2026 McDonald's menu with updated prices, calories, and nutrition info for 200+ items across Burgers, Breakfast, McCafé, and Happy Meals." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Preconnect to Google Fonts for fast rendering -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            mcd: {
+              red: '#DA291C',
+              redDark: '#B91C1C',
+              redLight: '#FEF2F2',
+              yellow: '#FFC72C',
+              yellowDark: '#F59E0B',
+              charcoal: '#1F2937',
+              cream: '#FAF8F5',
+            }
+          },
+          boxShadow: {
+            'card': '0 2px 10px -2px rgba(0, 0, 0, 0.05), 0 4px 16px -4px rgba(0, 0, 0, 0.03)',
+            'card-hover': '0 12px 24px -6px rgba(218, 41, 28, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.05)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- JSON-LD Schema Markup for Rich Snippets on Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "McDonald's Menu Prices and Calories Guide",
+    "url": "https://mcmenuprices.com/",
+    "description": "Complete 2026 McDonald's menu with updated prices, calories, and nutrition guide."
+  }
+  </script>
+
+  <style>
+    /* Ultra-lightweight custom utilities for smooth scrollbar & fast transitions */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    .hero-pattern {
+      background-color: #991B1B;
+      background-image: radial-gradient(circle at 20% 20%, rgba(255, 199, 44, 0.14) 0%, transparent 45%),
+                        radial-gradient(circle at 80% 80%, rgba(218, 41, 28, 0.4) 0%, transparent 50%),
+                        linear-gradient(135deg, #7F1D1D 0%, #B91C1C 50%, #991B1B 100%);
+    }
+
+    .card-zoom:hover .item-img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="bg-[#FAF8F5] text-gray-900 font-sans antialiased selection:bg-mcd-yellow selection:text-gray-900">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="bg-gray-900 text-mcd-yellow text-[11px] sm:text-xs py-2.5 px-4 text-center font-medium leading-relaxed">
+    <span class="inline-flex flex-wrap items-center justify-center gap-1.5">
+      <span class="w-2 h-2 rounded-full bg-mcd-yellow animate-pulse shrink-0"></span>
+      <span><strong class="font-extrabold">Disclaimer:</strong> This is an unofficial website built for educational purposes only, not affiliated with McDonald’s USA</span>
+    </span>
+  </div>
+
+  <!-- STICKY HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2.5 group focus:outline-none shrink-0">
+        <div class="w-10 h-10 rounded-xl bg-mcd-red flex items-center justify-center text-mcd-yellow font-black text-lg tracking-tighter shadow-sm group-hover:bg-mcd-redDark transition-colors">
+          MM
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-base sm:text-lg leading-none tracking-tight text-gray-900">
+            McDonald’s <span class="text-mcd-red">Menu</span>
+          </span>
+          <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mt-0.5">
+            Prices &amp; Calories Guide
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Main Navigation" class="hidden lg:flex items-center gap-1.5">
+        <!-- Explore Menu Dropdown -->
+        <div class="relative group">
+          <button class="px-3.5 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-mcd-red hover:bg-red-50/60 flex items-center gap-1 transition-colors">
+            Explore Menu
+            <svg class="w-4 h-4 text-gray-400 group-hover:text-mcd-red transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <!-- Mega Dropdown -->
+          <div class="absolute left-0 top-full pt-2 w-[540px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-5 grid grid-cols-2 gap-4">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-mcd-red mb-2.5">Main Categories</p>
+                <ul class="space-y-1.5 text-sm">
+                  <li><a href="#burgers" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Burgers</a></li>
+                  <li><a href="#chicken-sandwiches" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Chicken &amp; Fish Sandwiches</a></li>
+                  <li><a href="#mcnuggets-strips" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">McNuggets &amp; McCrispy Strips</a></li>
+                  <li><a href="#snack-wraps" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Snack Wraps</a></li>
+                  <li><a href="#breakfast-items" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Breakfast Items &amp; Meals</a></li>
+                  <li><a href="#extra-value-meals" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Extra Value Meals</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2.5">Deals, Drinks &amp; More</p>
+                <ul class="space-y-1.5 text-sm">
+                  <li><a href="#mcvalue" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">McValue™ &amp; $1 $2 $3 Menu</a></li>
+                  <li><a href="#fries-sides" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Fries, Sides &amp; Happy Meal®</a></li>
+                  <li><a href="#sweets-treats" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Sweets, Treats &amp; Shakes</a></li>
+                  <li><a href="#mccafe-coffees" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">McCafé® &amp; Beverages</a></li>
+                  <li><a href="#sauces" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Sauces &amp; Shareables</a></li>
+                  <li><a href="#limited-time" class="block px-2.5 py-1.5 rounded-lg hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red">Limited-Time / Special Items</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dedicated Menu Page Buttons -->
+        <a href="#" class="px-3.5 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-mcd-red hover:bg-red-50/60 transition-colors">
+          Dollar Menu
+        </a>
+        <a href="#" class="px-3.5 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-mcd-red hover:bg-red-50/60 transition-colors">
+          Allergen Menu
+        </a>
+        <a href="/breakfast-menu" class="px-3.5 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-mcd-red hover:bg-red-50/60 transition-colors">
+          Breakfast Menu
+        </a>
+
+        <!-- Legal Pages Dropdown -->
+        <div class="relative group">
+          <button class="px-3.5 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-mcd-red hover:bg-red-50/60 flex items-center gap-1 transition-colors">
+            Legal Pages
+            <svg class="w-4 h-4 text-gray-400 group-hover:text-mcd-red transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="absolute right-0 top-full pt-2 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-2.5 space-y-1 text-sm">
+              <a href="#" class="block px-3 py-2 rounded-xl hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red transition-colors">Privacy Policy</a>
+              <a href="#" class="block px-3 py-2 rounded-xl hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red transition-colors">Disclaimer</a>
+              <a href="#" class="block px-3 py-2 rounded-xl hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red transition-colors">Contact Us</a>
+              <a href="#" class="block px-3 py-2 rounded-xl hover:bg-red-50 font-medium text-gray-700 hover:text-mcd-red transition-colors">About Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center lg:hidden">
+        <button onclick="toggleMobileMenu()" aria-label="Open Menu" class="p-2.5 rounded-xl border border-gray-200 text-gray-700 hover:bg-gray-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 bg-white px-4 pt-3 pb-5 space-y-4 shadow-lg">
+      <div>
+        <p class="text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-2">Main Pages</p>
+        <div class="grid grid-cols-2 gap-2 text-sm font-semibold">
+          <a href="#" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-red-50/70 text-mcd-red">Dollar Menu</a>
+          <a href="#" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-red-50/70 text-mcd-red">Allergen Menu</a>
+          <a href="/breakfast-menu" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-red-50/70 text-mcd-red">Breakfast Menu</a>
+          <a href="#featured" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-gray-50 text-gray-700">Explore Full Menu</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-2">Legal Pages</p>
+        <div class="grid grid-cols-2 gap-2 text-sm font-medium">
+          <a href="#" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-gray-50 text-gray-700">Privacy Policy</a>
+          <a href="#" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-gray-50 text-gray-700">Disclaimer</a>
+          <a href="#" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-gray-50 text-gray-700">Contact Us</a>
+          <a href="#" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl bg-gray-50 text-gray-700">About Us</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Direct philosophical match to timsmenu.ca) -->
+  <section class="hero-pattern text-white pt-10 pb-12 sm:pt-14 sm:pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      
+      <!-- Top Updated Pill -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-xs sm:text-sm font-semibold text-amber-200 mb-5">
+        <span class="w-2 h-2 rounded-full bg-mcd-yellow"></span>
+        <span>Updated Menu October 2026</span>
+      </div>
+
+      <!-- Main SEO H1 Heading -->
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-4">
+        McDonald’s Menu With Prices <span class="text-mcd-yellow">2026</span>
+      </h1>
+
+      <!-- Subtitle description -->
+      <p class="text-sm sm:text-lg text-red-100 max-w-2xl mx-auto leading-relaxed mb-7 font-normal">
+        Browse the complete 2026 McDonald’s menu with updated prices, calories, and nutrition info for <strong class="text-white font-semibold">200+ items</strong> across all <strong class="text-white font-semibold">15 categories</strong> including Combo Meals, Breakfast &amp; McCafé.
+      </p>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-9">
+        <a href="#burgers" class="px-5 py-2.5 rounded-xl bg-mcd-yellow hover:bg-amber-400 text-gray-900 font-extrabold text-sm shadow-lg shadow-black/20 flex items-center gap-2 transition-transform active:scale-95">
+          View Full Menu Prices
+        </a>
+        <a href="#nutrition-guide" class="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/25 text-white font-bold text-sm backdrop-blur-sm transition-colors">
+          Price Summary Table
+        </a>
+      </div>
+
+      <!-- 3-Column Key Metrics Box -->
+      <div class="grid grid-cols-3 max-w-lg mx-auto bg-black/20 backdrop-blur-md rounded-2xl p-4 border border-white/15 mb-6">
+        <div class="border-r border-white/15 px-2">
+          <div class="text-xl sm:text-3xl font-black text-mcd-yellow">200+</div>
+          <div class="text-[11px] sm:text-xs text-red-100 font-medium mt-0.5">Menu Items</div>
+        </div>
+        <div class="border-r border-white/15 px-2">
+          <div class="text-xl sm:text-3xl font-black text-white">15</div>
+          <div class="text-[11px] sm:text-xs text-red-100 font-medium mt-0.5">Categories</div>
+        </div>
+        <div class="px-2">
+          <div class="text-xl sm:text-3xl font-black text-mcd-yellow">13,500+</div>
+          <div class="text-[11px] sm:text-xs text-red-100 font-medium mt-0.5">Locations</div>
+        </div>
+      </div>
+
+      <!-- Secondary Info Trust Badges -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs font-semibold text-red-100 mb-7">
+        <span class="inline-flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
+          Starting from <strong class="text-mcd-yellow">$1.49 USD</strong>
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
+          <span class="text-mcd-yellow">★</span> Updated Daily
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
+          <span class="text-emerald-300">✓</span> 100% Verified Prices
+        </span>
+      </div>
+
+      <!-- Instant Search Bar with ⌘K shortcut -->
+      <div class="max-w-2xl mx-auto relative">
+        <div class="relative flex items-center">
+          <svg class="w-5 h-5 text-gray-400 absolute left-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input 
+            id="menuSearchInput"
+            type="search" 
+            placeholder="Search the full McDonald's menu (e.g., Big Mac, McGriddles, Iced Coffee, Fries)..." 
+            class="w-full pl-12 pr-20 py-4 rounded-2xl bg-white text-gray-900 placeholder-gray-400 font-medium text-sm sm:text-base shadow-xl focus:outline-none focus:ring-4 focus:ring-mcd-yellow/60"
+          />
+          <div class="absolute right-3 flex items-center gap-1.5">
+            <button id="clearSearchBtn" onclick="clearSearch()" class="hidden text-xs bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold px-2 py-1 rounded-lg">Clear</button>
+            <kbd class="hidden sm:inline-block px-2 py-1 text-xs font-bold text-gray-500 bg-gray-100 border border-gray-200 rounded-lg">⌘K</kbd>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STICKY CATEGORY PILL BAR (Clean professional text buttons without emojis) -->
+  <div class="sticky top-16 z-30 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-2.5 sm:px-6 lg:px-8 py-2.5">
+      <!-- Primary Filter Pills Row with Mobile & Desktop Scroll Arrows -->
+      <div class="relative flex items-center gap-1.5 sm:gap-2">
+        <!-- Left Arrow Button (Visible on both Mobile & Desktop) -->
+        <button id="catScrollLeftBtn" onclick="scrollBar('categoryPillContainer', -240)" aria-label="Scroll Categories Left" class="flex shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white hover:bg-red-50 active:bg-red-100 text-gray-700 hover:text-mcd-red items-center justify-center border border-gray-200/90 shadow-sm transition-all active:scale-95">
+          <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+
+        <!-- Scrollable Pills Container with subtle edge fades -->
+        <div class="relative flex-1 overflow-hidden">
+          <div id="categoryPillContainer" class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth py-0.5 w-full">
+            <button onclick="selectCategoryPill('all')" data-cat="all" class="cat-pill active-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-mcd-red text-white shadow-sm transition-all">
+              All Menu (207 items)
+            </button>
+            <button onclick="selectCategoryPill('burgers')" data-cat="burgers" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Burgers
+            </button>
+            <button onclick="selectCategoryPill('chicken-sandwiches')" data-cat="chicken-sandwiches" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Chicken &amp; Fish
+            </button>
+            <button onclick="selectCategoryPill('mcnuggets-strips')" data-cat="mcnuggets-strips" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              McNuggets
+            </button>
+            <button onclick="selectCategoryPill('snack-wraps')" data-cat="snack-wraps" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Snack Wraps
+            </button>
+            <button onclick="selectCategoryPill('breakfast-items')" data-cat="breakfast-items" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Breakfast
+            </button>
+            <button onclick="selectCategoryPill('breakfast-meals')" data-cat="breakfast-meals" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Breakfast Meals
+            </button>
+            <button onclick="selectCategoryPill('extra-value-meals')" data-cat="extra-value-meals" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Value Meals
+            </button>
+            <button onclick="selectCategoryPill('mcvalue')" data-cat="mcvalue" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              McValue
+            </button>
+            <button onclick="selectCategoryPill('fries-sides')" data-cat="fries-sides" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Fries &amp; Sides
+            </button>
+            <button onclick="selectCategoryPill('happy-meal')" data-cat="happy-meal" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Happy Meal
+            </button>
+            <button onclick="selectCategoryPill('sweets-treats')" data-cat="sweets-treats" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Sweets
+            </button>
+            <button onclick="selectCategoryPill('mccafe-coffees')" data-cat="mccafe-coffees" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              McCafé
+            </button>
+            <button onclick="selectCategoryPill('specialty-drinks')" data-cat="specialty-drinks" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Specialty Drinks
+            </button>
+            <button onclick="selectCategoryPill('soft-drinks')" data-cat="soft-drinks" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Soft Drinks
+            </button>
+            <button onclick="selectCategoryPill('frozen-drinks')" data-cat="frozen-drinks" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Frozen Drinks
+            </button>
+            <button onclick="selectCategoryPill('smoothies')" data-cat="smoothies" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Smoothies
+            </button>
+            <button onclick="selectCategoryPill('tea-lemonade')" data-cat="tea-lemonade" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Tea &amp; Lemonade
+            </button>
+            <button onclick="selectCategoryPill('sauces')" data-cat="sauces" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Sauces
+            </button>
+            <button onclick="selectCategoryPill('dollar-menu')" data-cat="dollar-menu" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              $1 $2 $3 Menu
+            </button>
+            <button onclick="selectCategoryPill('shareables')" data-cat="shareables" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Shareables
+            </button>
+            <button onclick="selectCategoryPill('limited-time')" data-cat="limited-time" class="cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all">
+              Limited Time
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Arrow Button (Visible on both Mobile & Desktop) -->
+        <button id="catScrollRightBtn" onclick="scrollBar('categoryPillContainer', 240)" aria-label="Scroll Categories Right" class="flex shrink-0 w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white hover:bg-red-50 active:bg-red-100 text-gray-700 hover:text-mcd-red items-center justify-center border border-gray-200/90 shadow-sm transition-all active:scale-95">
+          <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Interactive Slider Track Beneath Category Buttons (Clickable & Draggable on Mobile/Desktop) -->
+      <div class="mt-2 px-10 sm:px-11">
+        <div id="catSliderTrack" onclick="seekCategoryBar(event)" class="relative h-1.5 w-full bg-gray-200/90 rounded-full overflow-hidden cursor-pointer">
+          <div id="catSliderThumb" class="absolute top-0 left-0 h-full bg-mcd-red rounded-full transition-all duration-75" style="width: 18%; transform: translateX(0%);"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+    <!-- Search Result Status Banner (Hidden by default) -->
+    <div id="searchStatusBanner" class="hidden mb-8 p-4 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-between">
+      <div class="flex items-center gap-2.5 text-sm font-semibold text-amber-900">
+        <span>🔍</span>
+        <span id="searchStatusText">Showing matching items</span>
+      </div>
+      <button onclick="clearSearch()" class="text-xs font-bold text-mcd-red hover:underline">Reset Filter</button>
+    </div>
+
+    <!-- DYNAMIC MENU SECTIONS CONTAINER (Populated cleanly for instant rendering & filtering) -->
+    <div id="menuSectionsWrapper" class="space-y-14"></div>
+
+    <!-- SEO BOOST SECTION: QUICK PRICE TABLE & RESTAURANT HOURS (Helps beat WordPress blogs on Google) -->
+    <section id="nutrition-guide" class="mt-20 bg-white rounded-3xl border border-gray-200/90 shadow-card p-6 sm:p-10">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-mcd-red bg-red-50 px-3 py-1 rounded-full">Quick Reference Guide</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-gray-900 mt-3">Most Popular McDonald’s Menu Prices (2026 Summary)</h2>
+        <p class="text-gray-600 text-sm sm:text-base mt-2 leading-relaxed">
+          Looking for a quick comparison of solo sandwich prices versus full combo meals? Our editorial team tracks drive-thru and app pricing across major US &amp; Canadian locations every month. Combo meals include Medium World Famous Fries and a Medium Soft Drink.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-gray-200">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200 text-gray-700 font-bold">
+              <th class="py-3.5 px-4">Popular Menu Item</th>
+              <th class="py-3.5 px-4">Category</th>
+              <th class="py-3.5 px-4">Single Price</th>
+              <th class="py-3.5 px-4">Combo Meal Price</th>
+              <th class="py-3.5 px-4">Calories (Single)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr class="hover:bg-red-50/30">
+              <td class="py-3 px-4 font-bold text-gray-900">Big Mac®</td>
+              <td class="py-3 px-4">Burgers</td>
+              <td class="py-3 px-4 font-semibold text-mcd-red">$5.69</td>
+              <td class="py-3 px-4 font-semibold">$9.89</td>
+              <td class="py-3 px-4">590 Cal</td>
+            </tr>
+            <tr class="hover:bg-red-50/30">
+              <td class="py-3 px-4 font-bold text-gray-900">Quarter Pounder® with Cheese</td>
+              <td class="py-3 px-4">Burgers</td>
+              <td class="py-3 px-4 font-semibold text-mcd-red">$5.89</td>
+              <td class="py-3 px-4 font-semibold">$10.29</td>
+              <td class="py-3 px-4">520 Cal</td>
+            </tr>
+            <tr class="hover:bg-red-50/30">
+              <td class="py-3 px-4 font-bold text-gray-900">10 Piece Chicken McNuggets®</td>
+              <td class="py-3 px-4">Chicken</td>
+              <td class="py-3 px-4 font-semibold text-mcd-red">$5.49</td>
+              <td class="py-3 px-4 font-semibold">$9.49</td>
+              <td class="py-3 px-4">410 Cal</td>
+            </tr>
+            <tr class="hover:bg-red-50/30">
+              <td class="py-3 px-4 font-bold text-gray-900">Egg McMuffin®</td>
+              <td class="py-3 px-4">Breakfast</td>
+              <td class="py-3 px-4 font-semibold text-mcd-red">$4.79</td>
+              <td class="py-3 px-4 font-semibold">$7.49</td>
+              <td class="py-3 px-4">310 Cal</td>
+            </tr>
+            <tr class="hover:bg-red-50/30">
+              <td class="py-3 px-4 font-bold text-gray-900">Sausage, Egg &amp; Cheese McGriddles®</td>
+              <td class="py-3 px-4">Breakfast</td>
+              <td class="py-3 px-4 font-semibold text-mcd-red">$5.19</td>
+              <td class="py-3 px-4 font-semibold">$8.19</td>
+              <td class="py-3 px-4">550 Cal</td>
+            </tr>
+            <tr class="hover:bg-red-50/30">
+              <td class="py-3 px-4 font-bold text-gray-900">McDouble® $5 Meal Deal</td>
+              <td class="py-3 px-4">McValue™</td>
+              <td class="py-3 px-4 font-semibold text-mcd-red">$2.99</td>
+              <td class="py-3 px-4 font-semibold text-emerald-700">$5.00 (4-Item Bundle)</td>
+              <td class="py-3 px-4">400 Cal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- HOURS & FAQ SECTION -->
+    <section id="hours-faq" class="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- Left Column: McDonald's Hours Card -->
+      <div class="lg:col-span-5 bg-white rounded-3xl border border-gray-200/90 shadow-card p-6 sm:p-8 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold mb-3">
+            <span>⏰</span> Operating Schedule
+          </div>
+          <h2 class="text-2xl font-black text-gray-900">McDonald’s Breakfast &amp; Lunch Hours</h2>
+          <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+            Most McDonald’s locations begin serving breakfast at <strong>5:00 AM</strong> and switch over to the regular lunch and dinner menu at <strong>10:30 AM</strong> on weekdays (11:00 AM on weekends at select franchises).
+          </p>
+
+          <div class="mt-6 space-y-3">
+            <div class="p-4 rounded-2xl bg-FAF8F5 border border-gray-100 flex items-center justify-between">
+              <div>
+                <p class="font-bold text-gray-900 text-sm">🥞 Breakfast Hours</p>
+                <p class="text-xs text-gray-500">McMuffins, Hotcakes, Hash Browns</p>
+              </div>
+              <span class="px-3 py-1 rounded-lg bg-amber-100 text-amber-900 font-extrabold text-xs">5:00 AM – 10:30 AM</span>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-FAF8F5 border border-gray-100 flex items-center justify-between">
+              <div>
+                <p class="font-bold text-gray-900 text-sm">🍔 Lunch &amp; Dinner Hours</p>
+                <p class="text-xs text-gray-500">Big Mac, Fries, McNuggets, Quarter Pounder</p>
+              </div>
+              <span class="px-3 py-1 rounded-lg bg-red-100 text-mcd-red font-extrabold text-xs">10:30 AM – Close</span>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-FAF8F5 border border-gray-100 flex items-center justify-between">
+              <div>
+                <p class="font-bold text-gray-900 text-sm">☕ McCafé &amp; Drinks</p>
+                <p class="text-xs text-gray-500">Iced Coffee, Lattes, Frappés, Smoothies</p>
+              </div>
+              <span class="px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-extrabold text-xs">Available All Day</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-5 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500">
+          <span>Drive-Thru open 24/7 at 60%+ locations</span>
+          <span class="font-bold text-mcd-red">Updated Oct 2026</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Frequently Asked Questions -->
+      <div class="lg:col-span-7 bg-white rounded-3xl border border-gray-200/90 shadow-card p-6 sm:p-8">
+        <span class="text-xs font-extrabold uppercase tracking-wider text-mcd-red bg-red-50 px-3 py-1 rounded-full">Reader Questions</span>
+        <h2 class="text-2xl font-black text-gray-900 mt-3 mb-5">Frequently Asked Questions</h2>
+
+        <div class="space-y-3">
+          <details class="group rounded-2xl border border-gray-200 p-4 open:bg-red-50/20 transition-colors" open>
+            <summary class="font-bold text-gray-900 text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
+              <span>What is included in the McDonald's $5 Meal Deal in 2026?</span>
+              <span class="text-mcd-red font-black group-open:rotate-45 transition-transform">+</span>
+            </summary>
+            <p class="text-sm text-gray-600 mt-2.5 leading-relaxed">
+              The $5 Meal Deal (part of the McValue™ platform) includes your choice of a McDouble® or McChicken® sandwich, a 4-piece Chicken McNuggets®, small World Famous Fries®, and a small soft drink for $5.00.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-gray-200 p-4 open:bg-red-50/20 transition-colors">
+            <summary class="font-bold text-gray-900 text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
+              <span>Does McDonald’s still serve All-Day Breakfast?</span>
+              <span class="text-mcd-red font-black group-open:rotate-45 transition-transform">+</span>
+            </summary>
+            <p class="text-sm text-gray-600 mt-2.5 leading-relaxed">
+              No, standard McDonald’s restaurants discontinued All-Day Breakfast to speed up drive-thru kitchen operations. Breakfast items end at 10:30 AM on weekdays and 11:00 AM at select locations on weekends, though McCafé coffees and bakery items remain available all day.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-gray-200 p-4 open:bg-red-50/20 transition-colors">
+            <summary class="font-bold text-gray-900 text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
+              <span>Why do McDonald’s prices vary slightly by location?</span>
+              <span class="text-mcd-red font-black group-open:rotate-45 transition-transform">+</span>
+            </summary>
+            <p class="text-sm text-gray-600 mt-2.5 leading-relaxed">
+              Approximately 93% of McDonald’s restaurants are independently owned and operated by local franchisees. Each franchisee sets prices based on local ingredients, rent, and labor costs, and delivery orders via third-party apps typically cost 15%–20% more than in-store or official app pickup.
+            </p>
+          </details>
+
+          <details class="group rounded-2xl border border-gray-200 p-4 open:bg-red-50/20 transition-colors">
+            <summary class="font-bold text-gray-900 text-sm sm:text-base cursor-pointer list-none flex items-center justify-between">
+              <span>How are Single vs. Combo Meal prices structured on this page?</span>
+              <span class="text-mcd-red font-black group-open:rotate-45 transition-transform">+</span>
+            </summary>
+            <p class="text-sm text-gray-600 mt-2.5 leading-relaxed">
+              Every menu card displays the base single item price in a bold red badge at the top, followed by an easy-to-read breakdown comparing single sandwich prices with Medium and Large Combo Meal prices right inside the card.
+            </p>
+          </details>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER (Competitor-Style Multi-Column SEO Footer + Independent Disclaimer) -->
+  <footer class="bg-gray-900 text-gray-300 pt-14 pb-10 mt-20 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-gray-800">
+        
+        <!-- Brand Column -->
+        <div class="lg:col-span-2">
+          <a href="#" class="inline-flex items-center gap-2.5 mb-3 group focus:outline-none">
+            <div class="w-9 h-9 rounded-xl bg-mcd-red flex items-center justify-center text-mcd-yellow font-black text-base">MM</div>
+            <div class="flex flex-col">
+              <span class="font-extrabold text-xl leading-none text-white">
+                <span class="text-black bg-white px-1.5 py-0.5 rounded-md">McDonald’s</span> <span class="text-mcd-red">Menu</span>
+              </span>
+              <span class="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mt-1">
+                Prices &amp; Calories Guide
+              </span>
+            </div>
+          </a>
+          <p class="text-sm text-gray-400 max-w-sm leading-relaxed">
+            Discover our complete, fast-loading guide to McDonald’s menu prices, calorie counts, combo meals, McCafé drinks, and seasonal promotions updated for 2026.
+          </p>
+          <p class="text-xs text-gray-500 mt-4">
+            <strong>Disclaimer:</strong> McDonald’s Menu Prices and Calories Guide is an unofficial informational website built for educational purposes only and is not affiliated with, endorsed by, or sponsored by McDonald’s Corporation. All trademarks are property of their respective owners.
+          </p>
+        </div>
+
+        <!-- Menu Categories -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Main Menu</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-mcd-yellow transition-colors">Dollar Menu</a></li>
+            <li><a href="#" class="hover:text-mcd-yellow transition-colors">Breakfast Menu</a></li>
+            <li><a href="#" class="hover:text-mcd-yellow transition-colors">Allergen Menu</a></li>
+            <li><a href="#burgers" class="hover:text-mcd-yellow transition-colors">Beef Burgers</a></li>
+            <li><a href="#chicken" class="hover:text-mcd-yellow transition-colors">Chicken &amp; Sandwiches</a></li>
+          </ul>
+        </div>
+
+        <!-- Drinks & Desserts -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Drinks &amp; Sides</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#mccafe" class="hover:text-mcd-yellow transition-colors">McCafé Hot &amp; Cold</a></li>
+            <li><a href="#fries-sides" class="hover:text-mcd-yellow transition-colors">World Famous Fries</a></li>
+            <li><a href="#desserts" class="hover:text-mcd-yellow transition-colors">McFlurry &amp; Shakes</a></li>
+            <li><a href="#nutrition-guide" class="hover:text-mcd-yellow transition-colors">Combo Meal Prices</a></li>
+            <li><a href="#hours-faq" class="hover:text-mcd-yellow transition-colors">Breakfast Hours</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Pages -->
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Legal Pages</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-mcd-yellow transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-mcd-yellow transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-mcd-yellow transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-mcd-yellow transition-colors">Disclaimer</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+        <p class="text-center sm:text-left font-medium">© 2026 McDonald’s Menu Prices and Calories Guide — Unofficial Guide.</p>
+        
+        <!-- Social Media Icons (Facebook, Pinterest, DeviantArt, 500px) -->
+        <div class="flex items-center gap-3">
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook" title="Facebook" class="w-9 h-9 rounded-xl bg-gray-800 hover:bg-mcd-red text-gray-300 hover:text-white flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </a>
+          <!-- Pinterest -->
+          <a href="#" aria-label="Pinterest" title="Pinterest" class="w-9 h-9 rounded-xl bg-gray-800 hover:bg-mcd-red text-gray-300 hover:text-white flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.592 0 12.017 0z"/></svg>
+          </a>
+          <!-- DeviantArt -->
+          <a href="#" aria-label="DeviantArt" title="DeviantArt" class="w-9 h-9 rounded-xl bg-gray-800 hover:bg-mcd-red text-gray-300 hover:text-white flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19.207 4.794l.23-.43V0H15.07l-.436.44-2.058 3.925-.646.436H4.58v5.993h4.04l.36.436-4.175 7.98-.24.43V24H8.93l.436-.44 2.07-3.925.644-.436h7.35v-5.993h-4.05l-.36-.438 4.186-7.977z"/></svg>
+          </a>
+          <!-- 500px -->
+          <a href="#" aria-label="500px" title="500px" class="w-9 h-9 rounded-xl bg-gray-800 hover:bg-mcd-red text-gray-300 hover:text-white flex items-center justify-center font-extrabold text-[10px] tracking-tighter transition-colors">
+            500px
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button
+    id="backToTopBtn"
+    onclick="scrollToTop()"
+    aria-label="Back to Top"
+    title="Back to Top"
+    class="fixed bottom-5 right-5 sm:bottom-7 sm:right-7 z-50 w-12 h-12 rounded-full bg-mcd-red hover:bg-mcd-redDark text-white shadow-xl border border-white/20 flex items-center justify-center opacity-0 invisible translate-y-4 transition-all duration-200 active:scale-95"
+  >
+    <svg class="w-5 h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- LIGHTWEIGHT VANILLA JAVASCRIPT -->
+  <script>
+    const MENU_SECTIONS = [
+      {
+        id: 'burgers',
+        catKey: 'burgers',
+        title: "Burgers",
+        items: [
+          { name: 'Hamburger', price: '$3.99', cal: '250 Cal', img: '' },
+          { name: 'Cheeseburger', price: '$3.89', cal: '300 Cal', img: '' },
+          { name: 'Double Cheeseburger', price: '$6.19', cal: '440 Cal', img: '' },
+          { name: 'McDouble®', price: '$4.59', cal: '390 Cal', img: '' },
+          { name: 'Daily Double', price: '$4.39', cal: '490 Cal', img: '' },
+          { name: 'Big Mac®', price: '$6.72', cal: '590 Cal', img: '' },
+          { name: 'Quarter Pounder® with Cheese', price: '$6.39', cal: '520 Cal', img: '' },
+          { name: 'Double Quarter Pounder® with Cheese', price: '$6.99', cal: '740 Cal', img: '' },
+          { name: 'Quarter Pounder® with Cheese Deluxe', price: '$7.49', cal: '630 Cal', img: '' },
+          { name: 'Bacon Quarter Pounder® with Cheese', price: '$8.99', cal: '630 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'chicken-sandwiches',
+        catKey: 'chicken-sandwiches',
+        title: "Chicken & Fish Sandwiches",
+        items: [
+          { name: 'McCrispy®', price: '$4.99', cal: '470 Cal', img: '' },
+          { name: 'Deluxe McCrispy®', price: '$6.59', cal: '530 Cal', img: '' },
+          { name: 'Spicy McCrispy®', price: '$5.49', cal: '530 Cal', img: '' },
+          { name: 'Spicy Deluxe McCrispy®', price: '$5.99', cal: '530 Cal', img: '' },
+          { name: 'Filet-O-Fish®', price: '$4.99', cal: '390 Cal', img: '' },
+          { name: 'McChicken®', price: '$3.10', cal: '400 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'mcnuggets-strips',
+        catKey: 'mcnuggets-strips',
+        title: "McNuggets & McCrispy Strips",
+        subgroups: [
+          {
+            title: "Chicken McNuggets® (by piece count)",
+            items: [
+              { name: '4 pc. Chicken McNuggets®', price: '$3.19', cal: '170 Cal', img: '' },
+              { name: '6 pc. Chicken McNuggets®', price: '$4.39', cal: '250 Cal', img: '' },
+              { name: '10 pc. Chicken McNuggets®', price: '$5.79', cal: '410 Cal', img: '' },
+              { name: '20 pc. Chicken McNuggets®', price: '$7.00', cal: '830 Cal', img: '' },
+              { name: '40 pc. Chicken McNuggets®', price: '$13.19', cal: '1660 Cal', img: '' },
+              { name: '40 pc. Chicken McNuggets® & 2 Large Fries', price: '$19.69', cal: '—', img: '' }
+            ]
+          },
+          {
+            title: "Spicy Chicken McNuggets® (by piece count)",
+            items: [
+              { name: '4 pc. Spicy Chicken McNuggets®', price: '$3.19', cal: '190 Cal', img: '' },
+              { name: '6 pc. Spicy Chicken McNuggets®', price: '$4.39', cal: '280 Cal', img: '' },
+              { name: '10 pc. Spicy Chicken McNuggets®', price: '$5.79', cal: '490 Cal', img: '' },
+              { name: '20 pc. Spicy Chicken McNuggets®', price: '$7.00', cal: '970 Cal', img: '' },
+              { name: '40 pc. Spicy Chicken McNuggets®', price: '$13.19', cal: '—', img: '' }
+            ]
+          },
+          {
+            title: "McCrispy® Strips (now crispier)",
+            items: [
+              { name: '3 pc. McCrispy® Strips', price: '$4.99–$5.49', cal: '400 Cal', img: '' },
+              { name: '4 pc. McCrispy® Strips', price: '$5.99–$6.19', cal: '520 Cal', img: '' }
+            ]
+          },
+          {
+            title: "McNuggets & Chicken Meals",
+            items: [
+              {
+                name: '6 pc. Chicken McNuggets® Meal',
+                price: '$8.49',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Medium', cal: '', price: '$8.49' },
+                  { label: 'Large', cal: '', price: '$9.49' }
+                ]
+              },
+              {
+                name: '10 pc. Chicken McNuggets® Meal',
+                price: '$10.09',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Medium', cal: '', price: '$10.09' },
+                  { label: 'Large', cal: '', price: '$11.09' }
+                ]
+              },
+              {
+                name: '6 pc. Spicy Chicken McNuggets® Meal',
+                price: '$8.49',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Medium', cal: '', price: '$8.49' },
+                  { label: 'Large', cal: '', price: '$9.49' }
+                ]
+              },
+              {
+                name: '10 pc. Spicy Chicken McNuggets® Meal',
+                price: '$10.09',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Medium', cal: '', price: '$10.09' },
+                  { label: 'Large', cal: '', price: '$11.09' }
+                ]
+              },
+              {
+                name: "Collector's 10 pc. McNuggets Meal",
+                price: '$12.19',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Medium', cal: '', price: '$12.19' },
+                  { label: 'Large', cal: '', price: '$13.19' }
+                ]
+              },
+              {
+                name: "Collector's 10 pc. Spicy McNuggets Meal",
+                price: '$12.19',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Medium', cal: '', price: '$12.19' },
+                  { label: 'Large', cal: '', price: '$13.19' }
+                ]
+              },
+              {
+                name: 'McCrispy® Strips Meal',
+                price: '$7.89',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: '3 pc', cal: '', price: '$7.89' },
+                  { label: '4 pc', cal: '', price: '$8.79' }
+                ]
+              }
+            ]
+          },
+          {
+            title: "Other Chicken Items (from full pricing)",
+            items: [
+              { name: 'Chicken McGriddles', price: '$2.99', cal: '', img: '' },
+              { name: 'McChicken', price: '$3.59', cal: '', img: '' },
+              { name: 'McChicken Biscuit', price: '$2.79', cal: '', img: '' },
+              { name: "Hot 'N Spicy McChicken", price: '$3.59', cal: '', img: '' },
+              {
+                name: 'McCrispy',
+                price: '$4.99',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Single', cal: '', price: '$4.99' },
+                  { label: 'Combo', cal: '', price: '$8.79' }
+                ]
+              },
+              {
+                name: 'Spicy McCrispy',
+                price: '$4.99',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Single', cal: '', price: '$4.99' },
+                  { label: 'Combo', cal: '', price: '$8.99' }
+                ]
+              },
+              {
+                name: 'Deluxe McCrispy',
+                price: '$5.79',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Single', cal: '', price: '$5.79' },
+                  { label: 'Combo', cal: '', price: '$9.49' }
+                ]
+              },
+              {
+                name: 'Deluxe Spicy McCrispy',
+                price: '$6.29',
+                cal: '',
+                img: '',
+                variants: [
+                  { label: 'Single', cal: '', price: '$6.29' },
+                  { label: 'Combo', cal: '', price: '$9.69' }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'snack-wraps',
+        catKey: 'snack-wraps',
+        title: "Snack Wraps",
+        items: [
+          { name: 'Ranch Snack Wrap®', price: '$2.99', cal: '390 Cal', img: '' },
+          { name: 'Spicy Snack Wrap®', price: '$2.99', cal: '380 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'breakfast-items',
+        catKey: 'breakfast-items',
+        title: "Breakfast — Individual Items",
+        items: [
+          { name: 'Bacon, Egg & Cheese Biscuit', price: '$5.89', cal: '460 Cal', img: '' },
+          { name: 'Egg McMuffin®', price: '$7.29', cal: '310 Cal', img: '' },
+          { name: 'Sausage McMuffin®', price: '$6.59', cal: '400 Cal', img: '' },
+          { name: 'Sausage McMuffin® with Egg', price: '$6.59', cal: '480 Cal', img: '' },
+          { name: 'Sausage Biscuit', price: '$2.49', cal: '460 Cal', img: '' },
+          { name: 'Sausage Biscuit with Egg', price: '$5.59', cal: '530 Cal', img: '' },
+          { name: 'Egg Cheese Biscuit', price: '$4.49', cal: '380 Cal', img: '' },
+          { name: 'Bacon, Egg & Cheese McGriddles®', price: '$5.72', cal: '430 Cal', img: '' },
+          { name: 'Sausage McGriddles®', price: '$5.72', cal: '430 Cal', img: '' },
+          { name: 'Sausage, Egg & Cheese McGriddles®', price: '$7.78', cal: '550 Cal', img: '' },
+          { name: 'Bacon, Egg & Cheese Bagel', price: '$5.59', cal: '590 Cal', img: '' },
+          { name: 'Sausage, Egg & Cheese Bagel', price: '$5.99', cal: '710 Cal', img: '' },
+          { name: 'Steak, Egg & Cheese Bagel', price: '$6.79', cal: '680 Cal', img: '' },
+          { name: 'Bagel (Plain)', price: '$3.59', cal: '270 Cal', img: '' },
+          { name: 'Egg and Cheese Bagel', price: '$3.29', cal: '520 Cal', img: '' },
+          { name: 'Big Breakfast®', price: '$7.59', cal: '760 Cal', img: '' },
+          { name: 'Big Breakfast® with Hotcakes', price: '$8.29', cal: '1340 Cal', img: '' },
+          { name: 'Hotcakes', price: '$5.69', cal: '580 Cal', img: '' },
+          { name: 'Hotcakes and Sausage', price: '$5.89', cal: '770 Cal', img: '' },
+          { name: 'Sausage Burrito', price: '$4.19', cal: '310 Cal', img: '' },
+          { name: 'Hash Browns', price: '$2.69', cal: '140 Cal', img: '' },
+          { name: 'Fruit & Maple Oatmeal', price: '$1.99', cal: '320 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'breakfast-meals',
+        catKey: 'breakfast-meals',
+        title: "Breakfast — Breakfast Meals",
+        items: [
+          { name: 'Egg McMuffin® Meal', price: '$8.19', cal: '455 Cal', img: '' },
+          { name: 'Sausage McMuffin® with Egg Meal', price: '$8.99', cal: '625 Cal', img: '' },
+          { name: 'Sausage Biscuit with Egg Meal', price: '$11.29', cal: '675 Cal', img: '' },
+          { name: 'Bacon, Egg & Cheese Biscuit Meal', price: '$11.29', cal: '605 Cal', img: '' },
+          { name: 'Bacon, Egg & Cheese McGriddles® Meal', price: '$11.29', cal: '575 Cal', img: '' },
+          { name: 'Sausage, Egg & Cheese McGriddles® Meal', price: '$11.29', cal: '695 Cal', img: '' },
+          { name: 'Sausage McGriddles® Meal', price: '$11.29', cal: '575 Cal', img: '' },
+          { name: 'Sausage Burrito Meal', price: '$11.09', cal: '455 Cal', img: '' },
+          { name: 'Bacon, Egg & Cheese Bagel Meal', price: '$9.99', cal: '735 Cal', img: '' },
+          { name: 'Steak, Egg & Cheese Bagel Meal', price: '$10.99', cal: '825 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'extra-value-meals',
+        catKey: 'extra-value-meals',
+        title: "Extra Value Meals — Lunch & Dinner",
+        items: [
+          { name: 'Big Mac® Meal', price: '$9.29', cal: '1170 Cal', img: '' },
+          { name: 'Quarter Pounder® with Cheese Meal', price: '$11.29', cal: '1110 Cal', img: '' },
+          { name: 'Bacon Quarter Pounder® with Cheese Meal', price: '$8.99', cal: '1220 Cal', img: '' },
+          { name: 'Quarter Pounder® with Cheese Deluxe Meal', price: '$13.99', cal: '1220 Cal', img: '' },
+          { name: 'Double Quarter Pounder® with Cheese Meal', price: '$12.49', cal: '1330 Cal', img: '' },
+          { name: 'Cheeseburger Meal', price: '$11.99', cal: '1190 Cal', img: '' },
+          { name: '10 Piece Chicken McNuggets® Meal', price: '$11.00', cal: '1000 Cal', img: '' },
+          { name: 'McCrispy® Meal', price: '$12.59', cal: '1040 Cal', img: '' },
+          { name: 'Spicy McCrispy® Meal', price: '$11.89', cal: '1100 Cal', img: '' },
+          { name: 'Deluxe McCrispy® Meal', price: '$9.89', cal: '1100 Cal', img: '' },
+          { name: 'Spicy Deluxe McCrispy® Meal', price: '$10.29', cal: '1100 Cal', img: '' },
+          { name: 'McCrispy® Strips Meal — 3-Piece', price: '$7.89', cal: '—', img: '' },
+          { name: 'McCrispy® Strips Meal — 4-Piece', price: '$8.79', cal: '—', img: '' },
+          { name: 'Ranch Snack Wrap® Meal', price: '$12.00', cal: '1350 Cal', img: '' },
+          { name: 'Spicy Snack Wrap® Meal', price: '$11.29', cal: '1330 Cal', img: '' },
+          { name: 'Ranch & Spicy Snack Wrap® Meal', price: '$10.19', cal: '1360 Cal', img: '' },
+          { name: 'Filet-O-Fish® Meal', price: '$12.59', cal: '950 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'mcvalue',
+        catKey: 'mcvalue',
+        title: "McValue™ Deals & Bundles",
+        subgroups: [
+          {
+            title: "$4 Meal Deals (Breakfast) — Limited Time",
+            items: [
+              { name: 'The Sausage Biscuit Meal Deal', price: '$4', cal: '605 Cal', img: '' },
+              { name: 'The Sausage McMuffin® Meal Deal', price: '$4', cal: '545 Cal', img: '' }
+            ]
+          },
+          {
+            title: "$5 / $6 Meal Deals (Lunch & Dinner)",
+            items: [
+              { name: 'The McChicken® $5 Meal Deal', price: '$5', cal: '990 Cal', img: '' },
+              { name: 'The McDouble® $5 Meal Deal', price: '$5', cal: '990 Cal', img: '' },
+              { name: 'The Daily Double Meal Deal', price: '$6', cal: '1090 Cal', img: '' }
+            ]
+          },
+          {
+            title: "Under $3 Menu (Breakfast)",
+            items: [
+              { name: 'Sausage Biscuit', price: 'Under $3', cal: '460 Cal', img: '' },
+              { name: 'Sausage McMuffin®', price: 'Under $3', cal: '400 Cal', img: '' },
+              { name: 'Sausage Burrito', price: 'Under $3', cal: '310 Cal', img: '' },
+              { name: 'Hash Browns', price: 'Under $3', cal: '140 Cal', img: '' },
+              { name: 'Medium McCafé® Premium Roast Coffee', price: 'Under $3', cal: '10 Cal', img: '' }
+            ]
+          },
+          {
+            title: "Under $3 Menu (Lunch & Dinner)",
+            items: [
+              { name: 'McDouble®', price: 'Under $3', cal: '390 Cal', img: '' },
+              { name: 'McChicken®', price: 'Under $3', cal: '400 Cal', img: '' },
+              { name: '4 Piece Chicken McNuggets®', price: 'Under $3', cal: '170 Cal', img: '' },
+              { name: 'Small World Famous Fries®', price: 'Under $3', cal: '230 Cal', img: '' },
+              { name: 'Medium Coca-Cola®', price: 'Under $3', cal: '270 Cal', img: '' }
+            ]
+          },
+          {
+            title: "Buy One, Add One for $1 (Breakfast)",
+            items: [
+              { name: 'Sausage Biscuit', price: '$4.79', cal: '460 Cal', img: '' },
+              { name: 'Sausage McMuffin®', price: '$4.67', cal: '400 Cal', img: '' },
+              { name: 'Sausage Burrito', price: '$4.67', cal: '400 Cal', img: '' },
+              { name: 'Hash Browns', price: '$2.69', cal: '140 Cal', img: '' }
+            ]
+          },
+          {
+            title: "Buy One, Add One for $1 (Lunch & Dinner)",
+            items: [
+              { name: 'Double Cheeseburger', price: '$4.19', cal: '450 Cal', img: '' },
+              { name: 'McChicken®', price: '$3.10', cal: '400 Cal', img: '' },
+              { name: '6 Piece Chicken McNuggets®', price: '$5.79', cal: '250 Cal', img: '' },
+              { name: 'Small World Famous Fries®', price: '$2.49', cal: '230 Cal', img: '' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'fries-sides',
+        catKey: 'fries-sides',
+        title: "Fries & Sides",
+        items: [
+          {
+            name: 'World Famous Fries®',
+            price: '$1.89',
+            cal: '110 Cal',
+            img: '',
+            variants: [
+              { label: 'Kids', cal: '110 Cal', price: '$1.89' },
+              { label: 'Small', cal: '230 Cal', price: '$3.49' },
+              { label: 'Medium', cal: '320 Cal', price: '$4.19' },
+              { label: 'Large', cal: '480 Cal', price: '$5.39' }
+            ]
+          },
+          { name: 'Apple Slices', price: '$1.50', cal: '15 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'happy-meal',
+        catKey: 'happy-meal',
+        title: "Happy Meal®",
+        items: [
+          { name: 'Hamburger Happy Meal®', price: '$5.99', cal: '475 Cal', img: '' },
+          { name: '4 Piece Chicken McNuggets® Happy Meal®', price: '$6.93', cal: '395 Cal', img: '' },
+          { name: '6 Piece Chicken McNuggets® Happy Meal®', price: '$7.19', cal: '475 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'sweets-treats',
+        catKey: 'sweets-treats',
+        title: "Sweets & Treats",
+        subgroups: [
+          {
+            title: "McFlurry®, Sundaes & Bakery",
+            items: [
+              {
+                name: 'OREO® McFlurry®',
+                price: '$2.29–$2.99',
+                cal: '410 Cal',
+                img: '',
+                variants: [
+                  { label: 'Regular', cal: '410 Cal', price: '$2.29–$2.99' }
+                ]
+              },
+              {
+                name: "M&M'S® McFlurry®",
+                price: '$3.00–$4.50',
+                cal: '570 Cal',
+                img: '',
+                variants: [
+                  { label: 'Regular', cal: '570 Cal', price: '$3.00–$4.50' }
+                ]
+              },
+              { name: 'Vanilla Cone', price: '$1.29–$2.43', cal: '200 Cal', img: '' },
+              { name: 'Hot Fudge Sundae', price: '$3.65–$4.29', cal: '330 Cal', img: '' },
+              { name: 'Hot Caramel Sundae', price: '$3.65–$4.29', cal: '340 Cal', img: '' },
+              { name: 'Baked Apple Pie', price: '$1.89', cal: '230 Cal', img: '' },
+              { name: 'Chocolate Chip Cookie', price: '$1.79', cal: '170 Cal', img: '' }
+            ]
+          },
+          {
+            title: "Shakes (by size)",
+            items: [
+              {
+                name: 'Chocolate Shake',
+                price: '$3.99',
+                cal: '520 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '520 Cal', price: '$3.99' },
+                  { label: 'Medium', cal: '680 Cal', price: '$4.69' },
+                  { label: 'Large', cal: '840 Cal', price: '$4.89' }
+                ]
+              },
+              {
+                name: 'Vanilla Shake',
+                price: '$3.99',
+                cal: '480 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '480 Cal', price: '$3.99' },
+                  { label: 'Medium', cal: '650 Cal', price: '$4.69' },
+                  { label: 'Large', cal: '780 Cal', price: '$4.89' }
+                ]
+              },
+              {
+                name: 'Strawberry Shake',
+                price: '$3.99',
+                cal: '470 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '470 Cal', price: '$3.99' },
+                  { label: 'Medium', cal: '670 Cal', price: '$4.69' },
+                  { label: 'Large', cal: '850 Cal', price: '$4.89' }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'mccafe-coffees',
+        catKey: 'mccafe-coffees',
+        title: "McCafé® Coffees",
+        subgroups: [
+          {
+            title: "Hot Coffee & Espresso",
+            items: [
+              {
+                name: 'McCafé® Premium Roast Coffee',
+                price: '$2.39',
+                cal: '5 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '5 Cal', price: '$2.39' },
+                  { label: 'Medium', cal: '10 Cal', price: '$2.99' },
+                  { label: 'Large', cal: '10 Cal', price: '$3.49' }
+                ]
+              },
+              {
+                name: 'McCafé® Premium Roast Decaf Coffee',
+                price: '$2.39',
+                cal: '5 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '5 Cal', price: '$2.39' },
+                  { label: 'Medium', cal: '10 Cal', price: '$2.99' },
+                  { label: 'Large', cal: '10 Cal', price: '$3.49' }
+                ]
+              },
+              {
+                name: 'Americano',
+                price: '$2.39',
+                cal: '0 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '0 Cal', price: '$2.39' },
+                  { label: 'Medium', cal: '5 Cal', price: '$3.19' },
+                  { label: 'Large', cal: '5 Cal', price: '$4.29' }
+                ]
+              },
+              {
+                name: 'McCafé® Latte',
+                price: '$3.19',
+                cal: '140 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '140 Cal', price: '$3.19' },
+                  { label: 'Medium', cal: '190 Cal', price: '$4.19' },
+                  { label: 'Large', cal: '250 Cal', price: '$5.29' }
+                ]
+              },
+              {
+                name: 'McCafé® Cappuccino',
+                price: '$3.19',
+                cal: '110 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '110 Cal', price: '$3.19' },
+                  { label: 'Medium', cal: '160 Cal', price: '$4.29' },
+                  { label: 'Large', cal: '200 Cal', price: '$5.19' }
+                ]
+              },
+              {
+                name: 'McCafé® Caramel Macchiato',
+                price: '$3.19',
+                cal: '260 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '260 Cal', price: '$3.19' },
+                  { label: 'Medium', cal: '260 Cal', price: '$4.09' },
+                  { label: 'Large', cal: '260 Cal', price: '$5.09' }
+                ]
+              },
+              {
+                name: 'McCafé® Caramel Latte',
+                price: '$3.39',
+                cal: '250 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '250 Cal', price: '$3.39' },
+                  { label: 'Medium', cal: '320 Cal', price: '$4.09' },
+                  { label: 'Large', cal: '390 Cal', price: '$4.49' }
+                ]
+              },
+              {
+                name: 'McCafé® Caramel Cappuccino',
+                price: '$3.39',
+                cal: '210 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '210 Cal', price: '$3.39' },
+                  { label: 'Medium', cal: '260 Cal', price: '$4.49' },
+                  { label: 'Large', cal: '340 Cal', price: '$5.19' }
+                ]
+              },
+              {
+                name: 'McCafé® French Vanilla Cappuccino',
+                price: '$3.39',
+                cal: '210 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '210 Cal', price: '$3.39' },
+                  { label: 'Medium', cal: '260 Cal', price: '$4.19' },
+                  { label: 'Large', cal: '340 Cal', price: '$4.59' }
+                ]
+              },
+              {
+                name: 'McCafé® French Vanilla Latte',
+                price: '$4.99',
+                cal: '250 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '250 Cal', price: '$4.99' },
+                  { label: 'Medium', cal: '320 Cal', price: '$5.19' },
+                  { label: 'Large', cal: '400 Cal', price: '$5.39' }
+                ]
+              },
+              {
+                name: 'McCafé® Mocha Latte',
+                price: '$3.59',
+                cal: '290 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '290 Cal', price: '$3.59' },
+                  { label: 'Medium', cal: '370 Cal', price: '$4.29' },
+                  { label: 'Large', cal: '460 Cal', price: '$4.59' }
+                ]
+              },
+              {
+                name: 'McCafé® Hot Chocolate',
+                price: '$3.09',
+                cal: '360 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '360 Cal', price: '$3.09' },
+                  { label: 'Medium', cal: '440 Cal', price: '$4.50' },
+                  { label: 'Large', cal: '540 Cal', price: '$5.10' }
+                ]
+              }
+            ]
+          },
+          {
+            title: "Iced Coffee & Iced Espresso",
+            items: [
+              {
+                name: 'McCafé® Iced Coffee',
+                price: '$1.89',
+                cal: '150 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '150 Cal', price: '$1.89' },
+                  { label: 'Medium', cal: '190 Cal', price: '$2.19' },
+                  { label: 'Large', cal: '270 Cal', price: '$3.19' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced Black Coffee',
+                price: '$1.89',
+                cal: '5 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '5 Cal', price: '$1.89' },
+                  { label: 'Medium', cal: '5 Cal', price: '$2.19' },
+                  { label: 'Large', cal: '10 Cal', price: '$3.19' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced Caramel Coffee',
+                price: '$3.89',
+                cal: '150 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '150 Cal', price: '$3.89' },
+                  { label: 'Medium', cal: '200 Cal', price: '$4.19' },
+                  { label: 'Large', cal: '270 Cal', price: '$5.19' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced French Vanilla Coffee',
+                price: '$3.89',
+                cal: '150 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '150 Cal', price: '$3.89' },
+                  { label: 'Medium', cal: '200 Cal', price: '$4.19' },
+                  { label: 'Large', cal: '280 Cal', price: '$5.19' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced Latte',
+                price: '$3.59',
+                cal: '80 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '80 Cal', price: '$3.59' },
+                  { label: 'Medium', cal: '120 Cal', price: '$4.39' },
+                  { label: 'Large', cal: '170 Cal', price: '$4.99' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced Caramel Latte',
+                price: '$3.39',
+                cal: '180 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '180 Cal', price: '$3.39' },
+                  { label: 'Medium', cal: '220 Cal', price: '$4.19' },
+                  { label: 'Large', cal: '330 Cal', price: '$4.59' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced French Vanilla Latte',
+                price: '$4.59',
+                cal: '180 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '180 Cal', price: '$4.59' },
+                  { label: 'Medium', cal: '220 Cal', price: '$4.79' },
+                  { label: 'Large', cal: '330 Cal', price: '$4.99' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced Caramel Macchiato',
+                price: '$3.59',
+                cal: '200 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '200 Cal', price: '$3.59' },
+                  { label: 'Medium', cal: '240 Cal', price: '$4.69' },
+                  { label: 'Large', cal: '360 Cal', price: '$5.19' }
+                ]
+              },
+              {
+                name: 'McCafé® Iced Mocha',
+                price: '$3.99',
+                cal: '270 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '270 Cal', price: '$3.99' },
+                  { label: 'Medium', cal: '320 Cal', price: '$4.19' },
+                  { label: 'Large', cal: '440 Cal', price: '$5.29' }
+                ]
+              }
+            ]
+          },
+          {
+            title: "Frappés",
+            items: [
+              {
+                name: 'McCafé® Caramel Frappé',
+                price: '$4.19',
+                cal: '420 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '420 Cal', price: '$4.19' },
+                  { label: 'Medium', cal: '490 Cal', price: '$4.49' },
+                  { label: 'Large', cal: '650 Cal', price: '$5.19' }
+                ]
+              },
+              {
+                name: 'McCafé® Mocha Frappé',
+                price: '$4.19',
+                cal: '430 Cal',
+                img: '',
+                variants: [
+                  { label: 'Small', cal: '430 Cal', price: '$4.19' },
+                  { label: 'Medium', cal: '490 Cal', price: '$4.49' },
+                  { label: 'Large', cal: '660 Cal', price: '$5.19' }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'specialty-drinks',
+        catKey: 'specialty-drinks',
+        title: "Beverages — McCafé® Specialty Drinks (New 2026)",
+        items: [
+          {
+            name: 'Sprite® Berry Blast',
+            price: '$3.89',
+            cal: '210 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '210 Cal', price: '$3.89' },
+              { label: 'Medium', cal: '290 Cal', price: '$4.29' },
+              { label: 'Large', cal: '390 Cal', price: '$5.29' }
+            ]
+          },
+          {
+            name: 'Strawberry Watermelon Refresher',
+            price: '$3.89',
+            cal: '160 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '160 Cal', price: '$3.89' },
+              { label: 'Medium', cal: '210 Cal', price: '$4.09' },
+              { label: 'Large', cal: '260 Cal', price: '$4.29' }
+            ]
+          },
+          {
+            name: 'Dirty Dr Pepper®',
+            price: '$2.99',
+            cal: '220 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '220 Cal', price: '$2.99' },
+              { label: 'Medium', cal: '300 Cal', price: '$3.39' },
+              { label: 'Large', cal: '410 Cal', price: '$3.89' }
+            ]
+          },
+          {
+            name: 'Mango Pineapple Refresher',
+            price: '$3.89',
+            cal: '180 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '180 Cal', price: '$3.89' },
+              { label: 'Medium', cal: '250 Cal', price: '$4.19' },
+              { label: 'Large', cal: '330 Cal', price: '$4.59' }
+            ]
+          },
+          {
+            name: 'Blackberry Passion Fruit Refresher',
+            price: '$3.89',
+            cal: '170 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '170 Cal', price: '$3.89' },
+              { label: 'Medium', cal: '230 Cal', price: '$4.09' },
+              { label: 'Large', cal: '270 Cal', price: '$4.29' }
+            ]
+          },
+          {
+            name: 'Orange Dream with Hi-C®',
+            price: '$3.39',
+            cal: '230 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '230 Cal', price: '$3.39' },
+              { label: 'Medium', cal: '320 Cal', price: '$3.89' },
+              { label: 'Large', cal: '430 Cal', price: '$4.49' }
+            ]
+          },
+          {
+            name: 'Orange Dream with Fanta®',
+            price: '$3.39',
+            cal: '250 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '250 Cal', price: '$3.39' },
+              { label: 'Medium', cal: '340 Cal', price: '$3.89' },
+              { label: 'Large', cal: '450 Cal', price: '$4.49' }
+            ]
+          },
+          {
+            name: 'Vanilla Swirl with Coca-Cola®',
+            price: '$3.39',
+            cal: '200 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '200 Cal', price: '$3.39' },
+              { label: 'Medium', cal: '280 Cal', price: '$3.89' },
+              { label: 'Large', cal: '380 Cal', price: '$4.49' }
+            ]
+          },
+          {
+            name: 'Reduced Sugar Vanilla Swirl with Diet Coke®',
+            price: '$3.39',
+            cal: '10 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '10 Cal', price: '$3.39' },
+              { label: 'Medium', cal: '15 Cal', price: '$3.89' },
+              { label: 'Large', cal: '20 Cal', price: '$4.49' }
+            ]
+          },
+          { name: 'Red Bull® Dragonberry Energizer', price: '$3.99–$4.99', cal: '100 Cal', img: '' },
+          { name: 'Reduced Sugar Red Bull® Dragonberry Energizer', price: '$5.19', cal: '100 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'soft-drinks',
+        catKey: 'soft-drinks',
+        title: "Beverages — Soft Drinks",
+        items: [
+          {
+            name: 'Coca-Cola®',
+            price: '$1.19',
+            cal: '150 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '150 Cal', price: '$1.19' },
+              { label: 'Medium', cal: '210 Cal', price: '$2.59' },
+              { label: 'Large', cal: '290 Cal', price: '$3.19' }
+            ]
+          },
+          {
+            name: 'Diet Coke®',
+            price: '$2.19',
+            cal: '0 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '0 Cal', price: '$2.19' },
+              { label: 'Medium', cal: '0 Cal', price: '$2.59' },
+              { label: 'Large', cal: '0 Cal', price: '$3.19' }
+            ]
+          },
+          {
+            name: 'Coca-Cola® Zero Sugar',
+            price: '$2.19',
+            cal: '0 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '0 Cal', price: '$2.19' },
+              { label: 'Medium', cal: '0 Cal', price: '$2.59' },
+              { label: 'Large', cal: '0 Cal', price: '$3.19' }
+            ]
+          },
+          {
+            name: 'Sprite®',
+            price: '$1.39',
+            cal: '140 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '140 Cal', price: '$1.39' },
+              { label: 'Medium', cal: '200 Cal', price: '$2.39' },
+              { label: 'Large', cal: '270 Cal', price: '$3.19' }
+            ]
+          },
+          {
+            name: 'Dr Pepper®',
+            price: '$1.19',
+            cal: '140 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '140 Cal', price: '$1.19' },
+              { label: 'Medium', cal: '200 Cal', price: '$2.39' },
+              { label: 'Large', cal: '280 Cal', price: '$3.19' }
+            ]
+          },
+          {
+            name: 'Fanta® Orange',
+            price: '$2.19',
+            cal: '150 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '150 Cal', price: '$2.19' },
+              { label: 'Medium', cal: '210 Cal', price: '$2.59' },
+              { label: 'Large', cal: '300 Cal', price: '$3.19' }
+            ]
+          },
+          {
+            name: 'Hi-C® Orange Lavaburst®',
+            price: '$1.49',
+            cal: '160 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '160 Cal', price: '$1.49' },
+              { label: 'Medium', cal: '230 Cal', price: '$2.19' },
+              { label: 'Large', cal: '310 Cal', price: '$3.19' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'frozen-drinks',
+        catKey: 'frozen-drinks',
+        title: "Beverages — Frozen Drinks",
+        items: [
+          {
+            name: 'Frozen Coca-Cola® Classic',
+            price: '$2.29',
+            cal: '60 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '60 Cal', price: '$2.29' },
+              { label: 'Medium', cal: '80 Cal', price: '$3.29' },
+              { label: 'Large', cal: '110 Cal', price: '$4.19' }
+            ]
+          },
+          {
+            name: 'Frozen Fanta® Blue Raspberry',
+            price: '$2.99',
+            cal: '60 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '60 Cal', price: '$2.99' },
+              { label: 'Medium', cal: '80 Cal', price: '$3.29' },
+              { label: 'Large', cal: '110 Cal', price: '$4.29' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'smoothies',
+        catKey: 'smoothies',
+        title: "Beverages — Smoothies",
+        items: [
+          {
+            name: 'Strawberry Banana Smoothie',
+            price: '$3.89',
+            cal: '140 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '140 Cal', price: '$3.89' },
+              { label: 'Medium', cal: '240 Cal', price: '$5.19' },
+              { label: 'Large', cal: '330 Cal', price: '$6.29' }
+            ]
+          },
+          {
+            name: 'Mango Pineapple Smoothie',
+            price: '$3.89',
+            cal: '200 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '200 Cal', price: '$3.89' },
+              { label: 'Medium', cal: '250 Cal', price: '$4.19' },
+              { label: 'Large', cal: '340 Cal', price: '$5.49' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'tea-lemonade',
+        catKey: 'tea-lemonade',
+        title: "Beverages — Iced Tea, Lemonade & Other",
+        items: [
+          {
+            name: 'Lemonade',
+            price: '$3.79',
+            cal: '120 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '120 Cal', price: '$3.79' },
+              { label: 'Medium', cal: '190 Cal', price: '$4.69' },
+              { label: 'Large', cal: '270 Cal', price: '$4.99' }
+            ]
+          },
+          {
+            name: 'Sweet Tea',
+            price: '$3.79',
+            cal: '120 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '120 Cal', price: '$3.79' },
+              { label: 'Medium', cal: '170 Cal', price: '$4.69' },
+              { label: 'Large', cal: '230 Cal', price: '$4.99' }
+            ]
+          },
+          {
+            name: 'Unsweetened Iced Tea',
+            price: '$3.79',
+            cal: '70 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '70 Cal', price: '$3.79' },
+              { label: 'Medium', cal: '100 Cal', price: '$4.69' },
+              { label: 'Large', cal: '140 Cal', price: '$4.99' }
+            ]
+          },
+          {
+            name: 'Hot Tea',
+            price: '$1.89',
+            cal: '10 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '10 Cal', price: '$1.89' },
+              { label: 'Medium', cal: '10 Cal', price: '$2.39' },
+              { label: 'Large', cal: '15 Cal', price: '$2.79' }
+            ]
+          },
+          {
+            name: 'Minute Maid® Premium Orange Juice',
+            price: '$3.79',
+            cal: '150 Cal',
+            img: '',
+            variants: [
+              { label: 'Small', cal: '150 Cal', price: '$3.79' },
+              { label: 'Medium', cal: '190 Cal', price: '$4.79' },
+              { label: 'Large', cal: '270 Cal', price: '$5.19' }
+            ]
+          },
+          { name: 'Honest Kids® Appley Ever After® Juice', price: '$1.89', cal: '35 Cal', img: '' },
+          { name: '1% Low Fat Milk Jug', price: '$1.89', cal: '100 Cal', img: '' },
+          { name: 'Reduced Sugar Low Fat Chocolate Milk Jug', price: '$1.89', cal: '100 Cal', img: '' },
+          { name: 'DASANI® Water', price: '$3.78', cal: '0 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'sauces',
+        catKey: 'sauces',
+        title: "Sauces & Condiments",
+        items: [
+          { name: 'Tangy Barbeque Sauce', price: '$0.35', cal: '45 Cal', img: '' },
+          { name: 'Spicy Buffalo Sauce', price: '$0.25', cal: '30 Cal', img: '' },
+          { name: 'Creamy Ranch Sauce', price: '$0.40', cal: '110 Cal', img: '' },
+          { name: 'Honey Mustard Sauce', price: '$0.40', cal: '60 Cal', img: '' },
+          { name: 'Honey', price: '$0.40', cal: '50 Cal', img: '' },
+          { name: "Sweet 'N Sour Sauce", price: '$0.40', cal: '50 Cal', img: '' },
+          { name: 'Ketchup Packet', price: '$0.40', cal: '10 Cal', img: '' },
+          { name: 'Mustard Packet', price: '$0.40', cal: '0 Cal', img: '' },
+          { name: 'Mayonnaise Packet', price: '$0.40', cal: '90 Cal', img: '' },
+          { name: 'Creamy Chili McCrispy™ Strip Dip', price: '$5.29–$5.99', cal: '110 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'dollar-menu',
+        catKey: 'dollar-menu',
+        title: "$1 $2 $3 Menu",
+        items: [
+          { name: 'Sausage Biscuit', price: '$2.43', cal: '460 Cal', img: '' },
+          { name: 'Sausage McMuffin®', price: '$2.67', cal: '400 Cal', img: '' },
+          { name: 'Sausage Burrito', price: '$2.69', cal: '310 Cal', img: '' },
+          { name: 'Hash Browns', price: '$2.69', cal: '140 Cal', img: '' },
+          { name: 'McDouble®', price: '$3.65', cal: '400 Cal', img: '' },
+          { name: 'McChicken®', price: '$3.10', cal: '400 Cal', img: '' },
+          { name: 'Chicken McNuggets® (4 pc)', price: '$2.99', cal: '170 Cal', img: '' },
+          { name: 'World Famous Fries® (Small)', price: '$1.89', cal: '230 Cal', img: '' }
+        ]
+      },
+      {
+        id: 'shareables',
+        catKey: 'shareables',
+        title: "Shareables & Bundles",
+        items: [
+          { name: '13 Cookie Tote', price: '$12.59', cal: '', img: '' },
+          { name: '2 Large Fries', price: '$6.29', cal: '', img: '' },
+          { name: '40 pc. Chicken McNuggets', price: '$13.19', cal: '', img: '' },
+          { name: '40 pc. Chicken McNuggets & 2 Large Fries', price: '$19.69', cal: '', img: '' },
+          { name: '40 pc. Spicy Chicken McNuggets', price: '$13.19', cal: '', img: '' },
+          { name: 'Classic Big Mac Pack', price: '$22.39', cal: '', img: '' },
+          { name: 'Classic Cheeseburger Pack', price: '$18.49', cal: '', img: '' }
+        ]
+      },
+      {
+        id: 'limited-time',
+        catKey: 'limited-time',
+        title: "Limited-Time / Special Items",
+        subgroups: [
+          {
+            title: "New Caesar Menu 2026",
+            items: [
+              { name: 'Caesar Snack Wrap®', price: 'Starts at $2.99', cal: '390 Cal', img: '' },
+              { name: 'Bacon Caesar McCrispy®', price: '$6.49–$9.89', cal: '750 Cal', img: '' },
+              { name: 'Caesar Sauce Dip Cup', price: '$0.25', cal: '120 Cal', img: '' },
+              { name: 'McCrispy® Strips – 3 Piece', price: '$5.49–$6.99', cal: '400 Cal', img: '' },
+              { name: '3-Piece McCrispy Strips with Caesar Sauce', price: '$5.99–$7.49', cal: '~520 Cal', img: '' }
+            ]
+          },
+          {
+            title: "Spicy Chicken McNuggets (Limited Time)",
+            items: [
+              { name: '10 Piece Spicy Chicken McNuggets®', price: '$6.29–$8.39', cal: '490 Cal', img: '' },
+              { name: 'Mighty Hot Sauce®', price: 'Included', cal: '25 Cal', img: '' }
+            ]
+          },
+          {
+            title: "Honey Brown Butter Breakfast Biscuit (Limited Time)",
+            items: [
+              { name: 'Honey Brown Butter Bacon, Egg & Cheese Biscuit', price: '$4.49–$5.99', cal: '490 Cal', img: '' }
+            ]
+          }
+        ]
+      }
+    ];
+
+    let activeCategory = 'all';
+
+    function renderCardHTML(item) {
+      const hasCal = item.cal && item.cal.trim() !== '';
+      const hasVariants = Array.isArray(item.variants) && item.variants.length > 0;
+
+      return `
+        <article class="bg-white rounded-2xl border border-gray-200/80 shadow-card hover:shadow-card-hover transition-all duration-200 flex flex-col justify-between overflow-hidden">
+          <div class="flex flex-col h-full justify-between">
+            <div>
+              <!-- Clean Empty Image Slot (Top badges removed) -->
+              <div class="relative h-44 sm:h-48 bg-gray-50/80 flex items-center justify-center p-4 overflow-hidden border-b border-gray-100">
+                ${item.img ? `<img src="${item.img}" alt="${item.name}" loading="lazy" width="320" height="240" class="h-36 w-auto object-contain rounded-xl" />` : `
+                  <div class="w-full h-full rounded-xl border border-dashed border-gray-200/80 flex items-center justify-center"></div>
+                `}
+              </div>
+
+              <!-- Card Body: Item Name & Optional Size Breakdown -->
+              <div class="p-4 sm:p-5 pb-0">
+                <h4 class="font-extrabold text-base sm:text-lg text-gray-900 leading-snug">
+                  ${item.name}
+                </h4>
+
+                ${hasVariants ? `
+                  <div class="mt-3.5 pt-3 border-t border-gray-100 space-y-2">
+                    ${item.variants.map(v => `
+                      <div class="flex items-center justify-between py-1.5 px-2.5 rounded-xl bg-[#FAF8F5] border border-gray-100">
+                        <span class="font-semibold text-xs sm:text-sm text-gray-800 pr-2">${v.label}</span>
+                        <div class="flex items-center gap-2.5 shrink-0">
+                          ${v.cal ? `<span class="text-xs font-medium text-gray-500">${v.cal}</span>` : ''}
+                          <span class="px-2.5 py-0.5 rounded-lg bg-mcd-red text-white font-black text-sm sm:text-base">${v.price}</span>
+                        </div>
+                      </div>
+                    `).join('')}
+                  </div>
+                ` : ''}
+              </div>
+            </div>
+
+            <!-- Card Footer: Calorie Count at Bottom-Left & Enlarged Red Price Badge at Bottom-Right -->
+            <div class="p-4 sm:p-5 pt-3.5 mt-3.5 border-t border-gray-100 flex items-center justify-between gap-2">
+              <span class="px-3 py-1.5 rounded-xl bg-gray-100 text-gray-800 font-extrabold text-xs sm:text-sm border border-gray-200/80">
+                ${hasCal ? item.cal : 'Price'}
+              </span>
+              <span class="px-4 py-1.5 rounded-xl bg-mcd-red text-white font-black text-lg sm:text-xl tracking-tight shadow-sm">
+                ${item.price}
+              </span>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderCategoryHeaderH2(title, itemCount) {
+      return `
+        <div class="mb-7 bg-gradient-to-r from-mcd-red via-mcd-red to-mcd-redDark rounded-2xl px-5 py-4 sm:px-7 sm:py-5 shadow-md flex flex-wrap items-center justify-between gap-3 border border-red-700/40">
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight leading-snug">
+            ${title}
+          </h2>
+          <span class="text-xs sm:text-sm font-extrabold text-white bg-black/20 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/20 shrink-0">
+            ${itemCount} ${itemCount === 1 ? 'item' : 'items'}
+          </span>
+        </div>
+      `;
+    }
+
+    function renderMenuSections(searchQuery = '') {
+      const wrapper = document.getElementById('menuSectionsWrapper');
+      const normalizedQuery = searchQuery.trim().toLowerCase();
+      let html = '';
+      let totalMatched = 0;
+
+      MENU_SECTIONS.forEach(section => {
+        if (section.subgroups) {
+          let subgroupsHTML = '';
+          let sectionCount = 0;
+
+          section.subgroups.forEach(sub => {
+            const matchedItems = sub.items.filter(item => {
+              if (!normalizedQuery) return true;
+              return (
+                item.name.toLowerCase().includes(normalizedQuery) ||
+                sub.title.toLowerCase().includes(normalizedQuery) ||
+                section.title.toLowerCase().includes(normalizedQuery)
+              );
+            });
+
+            if (matchedItems.length > 0) {
+              sectionCount += matchedItems.length;
+              totalMatched += matchedItems.length;
+              subgroupsHTML += `
+                <div class="mt-8 first:mt-0">
+                  <h3 class="text-lg sm:text-xl font-extrabold text-gray-900 mb-4 pb-2.5 border-b-2 border-red-100 flex items-center gap-2.5">
+                    <span class="w-2 h-5 rounded-full bg-mcd-red shrink-0"></span>
+                    <span>${sub.title}</span>
+                  </h3>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    ${matchedItems.map(item => renderCardHTML(item)).join('')}
+                  </div>
+                </div>
+              `;
+            }
+          });
+
+          if (sectionCount > 0) {
+            html += `
+              <section id="${section.id}" class="scroll-mt-36">
+                ${renderCategoryHeaderH2(section.title, sectionCount)}
+                ${subgroupsHTML}
+              </section>
+            `;
+          }
+        } else {
+          const filteredItems = section.items.filter(item => {
+            if (!normalizedQuery) return true;
+            return (
+              item.name.toLowerCase().includes(normalizedQuery) ||
+              section.title.toLowerCase().includes(normalizedQuery)
+            );
+          });
+
+          if (filteredItems.length === 0) return;
+          totalMatched += filteredItems.length;
+
+          html += `
+            <section id="${section.id}" class="scroll-mt-36">
+              ${renderCategoryHeaderH2(section.title, filteredItems.length)}
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                ${filteredItems.map(item => renderCardHTML(item)).join('')}
+              </div>
+            </section>
+          `;
+        }
+      });
+
+      if (totalMatched === 0) {
+        html = `
+          <div class="text-center py-16 bg-white rounded-3xl border border-gray-200 p-8">
+            <h3 class="text-xl font-black text-gray-900">No matching McDonald's items found</h3>
+            <p class="text-sm text-gray-500 mt-1">Try searching for "Big Mac", "McNuggets", "Coffee", or "Breakfast".</p>
+            <button onclick="clearSearch()" class="mt-4 px-5 py-2.5 rounded-xl bg-mcd-red text-white font-bold text-xs">Show Full Menu</button>
+          </div>
+        `;
+      }
+
+      wrapper.innerHTML = html;
+    }
+
+    function updateActivePillUI(cat) {
+      activeCategory = cat;
+      const container = document.getElementById('categoryPillContainer');
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        if (btn.dataset.cat === cat) {
+          btn.className = 'cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-mcd-red text-white shadow-sm transition-all';
+          // Auto-center the selected category button inside the horizontal bar
+          if (container) {
+            const scrollTarget = btn.offsetLeft - (container.clientWidth / 2) + (btn.clientWidth / 2);
+            container.scrollTo({ left: Math.max(0, scrollTarget), behavior: 'smooth' });
+          }
+        } else {
+          btn.className = 'cat-pill shrink-0 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gray-100 hover:bg-red-50 text-gray-700 hover:text-mcd-red transition-all';
+        }
+      });
+    }
+
+    // Clicking a top category button keeps all categories rendered and scrolls directly to that category
+    function selectCategoryPill(cat) {
+      const searchInput = document.getElementById('menuSearchInput');
+      if (searchInput && searchInput.value.trim() !== '') {
+        searchInput.value = '';
+        document.getElementById('clearSearchBtn').classList.add('hidden');
+        document.getElementById('searchStatusBanner').classList.add('hidden');
+        renderMenuSections('');
+      }
+
+      updateActivePillUI(cat);
+
+      if (cat === 'all') {
+        const wrapper = document.getElementById('menuSectionsWrapper');
+        if (wrapper) {
+          wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        const targetSection = document.getElementById(cat);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    }
+
+    // Horizontally slide category container on mobile & desktop arrows
+    function scrollBar(containerId, amount) {
+      const container = document.getElementById(containerId);
+      if (container) {
+        container.scrollBy({ left: amount, behavior: 'smooth' });
+      }
+    }
+
+    // Sync the red slider indicator underneath the category buttons
+    function syncCategorySlider() {
+      const container = document.getElementById('categoryPillContainer');
+      const thumb = document.getElementById('catSliderThumb');
+      if (!container || !thumb) return;
+
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      if (maxScroll <= 0) {
+        thumb.style.width = '100%';
+        thumb.style.left = '0%';
+        return;
+      }
+
+      const visibleRatio = Math.max(0.15, Math.min(1, container.clientWidth / container.scrollWidth));
+      const thumbWidthPercent = visibleRatio * 100;
+      const scrollProgress = container.scrollLeft / maxScroll;
+      const maxLeftPercent = 100 - thumbWidthPercent;
+      const leftPercent = scrollProgress * maxLeftPercent;
+
+      thumb.style.width = `${thumbWidthPercent}%`;
+      thumb.style.left = `${leftPercent}%`;
+    }
+
+    // Allow users to tap anywhere on the slider track to jump through categories
+    function seekCategoryBar(e) {
+      const track = document.getElementById('catSliderTrack');
+      const container = document.getElementById('categoryPillContainer');
+      if (!track || !container) return;
+
+      const rect = track.getBoundingClientRect();
+      const clickRatio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      container.scrollTo({ left: clickRatio * maxScroll, behavior: 'smooth' });
+    }
+
+    // Smooth Scroll to Top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Show/Hide Floating Back to Top Button on Scroll
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 380) {
+        backToTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+        backToTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+        backToTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+      }
+    }, { passive: true });
+
+    // Search Input Handler
+    const searchInput = document.getElementById('menuSearchInput');
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const statusBanner = document.getElementById('searchStatusBanner');
+    const statusText = document.getElementById('searchStatusText');
+
+    searchInput.addEventListener('input', (e) => {
+      const val = e.target.value;
+      if (val.trim().length > 0) {
+        clearBtn.classList.remove('hidden');
+        statusBanner.classList.remove('hidden');
+        statusText.textContent = `Filtering menu items for "${val}"`;
+      } else {
+        clearBtn.classList.add('hidden');
+        statusBanner.classList.add('hidden');
+      }
+      renderMenuSections(val);
+    });
+
+    function clearSearch() {
+      searchInput.value = '';
+      clearBtn.classList.add('hidden');
+      statusBanner.classList.add('hidden');
+      updateActivePillUI('all');
+      renderMenuSections('');
+    }
+
+    function focusSearch() {
+      searchInput.focus();
+      window.scrollTo({ top: 140, behavior: 'smooth' });
+    }
+
+    // Keyboard shortcut ⌘K / Ctrl+K for Search
+    window.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        focusSearch();
+      }
+    });
+
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    // Initial Render on DOM Ready
+    document.addEventListener('DOMContentLoaded', () => {
+      renderMenuSections();
+      const pillContainer = document.getElementById('categoryPillContainer');
+      if (pillContainer) {
+        pillContainer.addEventListener('scroll', syncCategorySlider, { passive: true });
+        window.addEventListener('resize', syncCategorySlider, { passive: true });
+        syncCategorySlider();
+      }
+    });
+  </script>
+</body>
+</html>
