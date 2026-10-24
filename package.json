@@ -1,0 +1,14 @@
+{
+  "name": "mcdonalds-menu-prices-us",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c ./tailwind.config.js -i ./src/tailwind.css -o ./styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.19"
+  },
+  "overrides": {
+    "postcss-nested": "7.0.2",
+    "postcss-selector-parser": "7.1.6"
+  }
+}
