@@ -1,7 +1,7 @@
 # Mac-Menus post sitemap URL inventory
 # Retrieved 2026-10-25. 182 post URLs; checked against the public WordPress posts API (100 on page 1, 82 on page 2; page 183 with one item per page is invalid).
 # One canonical post URL per line. This is a research inventory, not a publication feed.
-# Current checkout: 3 pre-existing sitemap article routes have brand-first title/H1 edits; 2 additional sitemap articles are drafts; 177 sitemap posts still lack a local article route. None of these current-task changes has been published.
+# Current working tree: 3 pre-existing sitemap article routes have brand-first title/H1 edits; 2 Minecraft articles were published in PR #7; 1 Hash Browns article is drafted on the current branch; 176 sitemap URLs still lack a local article route.
 https://www.mac-menus.com/hash-browns/
 https://www.mac-menus.com/double-filet-o-fish/
 https://www.mac-menus.com/mcdonalds-monopoly/
