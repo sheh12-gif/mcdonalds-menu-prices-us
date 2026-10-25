@@ -5,6 +5,7 @@ module.exports = {
     './breakfast-menu/**/*.html',
     './a-minecraft-movie-meal-10-piece-mcnuggets/**/*.html',
     './a-minecraft-movie-meal-big-mac/**/*.html',
+    './hash-browns/**/*.html',
     './big-mac/**/*.html',
     './quarter-pounder-with-cheese/**/*.html',
     './double-big-mac/**/*.html',
