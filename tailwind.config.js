@@ -3,6 +3,8 @@ module.exports = {
   content: [
     './index.html',
     './breakfast-menu/**/*.html',
+    './a-minecraft-movie-meal-10-piece-mcnuggets/**/*.html',
+    './a-minecraft-movie-meal-big-mac/**/*.html',
     './big-mac/**/*.html',
     './quarter-pounder-with-cheese/**/*.html',
     './double-big-mac/**/*.html',
