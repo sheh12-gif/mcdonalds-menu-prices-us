@@ -3,6 +3,10 @@ module.exports = {
   content: [
     './index.html',
     './breakfast-menu/**/*.html',
+    './big-mac/**/*.html',
+    './quarter-pounder-with-cheese/**/*.html',
+    './double-big-mac/**/*.html',
+    './double-quarter-pounder-with-cheese/**/*.html',
     './about-us/**/*.html',
     './contact-us/**/*.html',
     './privacy-policy/**/*.html',
