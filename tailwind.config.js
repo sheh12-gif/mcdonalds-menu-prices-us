@@ -1,6 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './breakfast-menu/**/*.html'],
+  content: [
+    './index.html',
+    './breakfast-menu/**/*.html',
+    './about-us/**/*.html',
+    './contact-us/**/*.html',
+    './privacy-policy/**/*.html',
+    './disclaimer/**/*.html',
+    './terms-and-conditions/**/*.html',
+    './cookie-policy/**/*.html',
+  ],
   theme: {
     extend: {
       fontFamily: {
